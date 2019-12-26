@@ -3,6 +3,12 @@
 @import 'mixins'
 @import 'libs'
 
+*,
+*:before,
+*:after
+	box-sizing: border-box
+
+
 
 ::placeholder
 	color: #666
@@ -19,13 +25,16 @@ input, textarea
 		border-color: green
 
 body
-	font-size: 16px
-	min-width: 320px
+	+margin-auto
 	position: relative
-	line-height: 1.65
+	
+	font-size: 18px
+	max-width: 320px
+	height: 2327px
+	
+	line-height: 27px
 	font-family: $default-font
 	font-weight: bold
-	overflow-x: hidden
 	color: $text
 
 .container
@@ -33,5 +42,6 @@ body
 
 
 @import 'blocks/header'
+
 
 	

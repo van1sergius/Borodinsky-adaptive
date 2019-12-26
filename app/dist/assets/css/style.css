@@ -30,6 +30,12 @@
   src: url("../fonts/PT_Sans-Web-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans-Web-BoldItalic.woff2") format("woff2"), url("../fonts/PT_Sans-Web-BoldItalic.woff") format("woff"), url("../fonts/PT_Sans-Web-BoldItalic.ttf") format("truetype");
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 ::-webkit-input-placeholder {
     color: #666;
 }
@@ -51,12 +57,12 @@
 }
 
 ::-moz-selection {
-    background-color: grey;
+    background-color: #826550;
     color: #fff;
 }
 
 ::selection {
-    background-color: grey;
+    background-color: #826550;
     color: #fff;
 }
 
@@ -73,16 +79,61 @@ input:required:valid, textarea:required:valid {
 }
 
 body {
-    font-size: 16px;
-    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    line-height: 1.65;
+    font-size: 18px;
+    max-width: 320px;
+    height: 2327px;
+    line-height: 27px;
     font-family: "PT Sans", sans-serif;
     font-weight: bold;
-    overflow-x: hidden;
-    color: #333;
+    color: #000;
 }
 
 .container {
     max-width: 320px;
+}
+
+.header {
+    width: 100%;
+    background-color: #242424;
+}
+
+.header__logo {
+    display: block;
+    padding-top: 29px;
+    padding-left: 7px;
+    width: 100%;
+    height: 66px;
+    text-align: center;
+}
+
+.header__nav-wrapper {
+    margin-top: 19px;
+    background-color: #826550;
+}
+
+.header__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.header__nav-item {
+    color: inherit;
+    text-decoration: none;
+    padding: 19px 130px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
 }
