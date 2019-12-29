@@ -1,7 +1,10 @@
+@import '../libs/_hamburgers'
+
 .header
   width: 100%
   background-color: $grey
-  &__logo
+
+  &__logo //header
     display: block
     padding-top: 29px
     padding-left: 7px
@@ -9,26 +12,60 @@
     height: 66px
     text-align: center
 
-  &__nav
+  &__nav //header
+    position: relative
 
-    
-    &-wrapper
+    &-wrapper //nav
       margin-top: 19px
-      background-color: $accent
 
-    &-list
+    &-list //nav
       +reset-list
       display: flex
       flex-direction: column
       margin-top: 10px
     
-    &-item
+    &-item //nav
       +reset-link
-      padding: 19px 130px
+      position: relative
+      display: none
+      padding: 11.4px 21.2px 
+      padding-right: 0
       color: $white
       text-transform: uppercase
       font-weight: 700
-      text-align: center
+      background-color: $accent
+      border-bottom: 1px solid #71543f
 
-      
-   
+      &:active //item
+        background-color: $accent-dark
+
+      &--visible //item
+        display: block
+
+      &--active //item
+        display: block
+        padding-left: 130px
+        cursor: default
+        &:active
+          background-color: $accent
+
+      &--login //item
+        text-transform: none
+        font-weight: normal
+        padding-left: 48px
+        &::before
+          +icon(16px, 16px, '../img/login.png', 19px, 16px)
+    
+    &-hamburger //nav
+      position: absolute
+      outline: none
+      right: 0
+      top: 0
+      &:active //hamburger
+        background-color: $accent-dark
+    
+
+
+
+    
+    

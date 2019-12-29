@@ -6,6 +6,7 @@
   "author": "Van",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -21,6 +22,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
+    "hamburgers": "^1.1.3",
     "panini": "^1.6.3"
   },
   "dependencies": {
