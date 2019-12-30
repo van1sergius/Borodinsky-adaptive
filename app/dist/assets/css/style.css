@@ -120,10 +120,6 @@ body {
     background-color: #6a4d38;
 }
 
-.nav__item--visible {
-    display: block;
-}
-
 .nav__item--active {
     display: block;
     padding-left: 130px;
@@ -132,6 +128,12 @@ body {
 
 .nav__item--active:active {
     background-color: #826550;
+}
+
+.nav__item--visible {
+    display: block;
+    padding: 11.4px 21.2px;
+    padding-right: 0;
 }
 
 .nav__item--login {
