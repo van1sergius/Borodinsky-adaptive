@@ -26,8 +26,8 @@ input, textarea
 		border-color: green
 
 body
-	+margin-auto
 	position: relative
+	margin: 0 auto
 	
 	font-size: 18px
 	max-width: 320px
@@ -38,11 +38,11 @@ body
 	font-weight: bold
 	color: $text
 
-.container
-	max-width: 320px
 
-
-@import 'blocks/header'
+@import 'blocks/header/_header'
+@import 'blocks/header/_nav'
+@import 'blocks/header/_hamburger'
+@import 'blocks/header/_logo'
 
 
 	

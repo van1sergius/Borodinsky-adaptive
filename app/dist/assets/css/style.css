@@ -64,9 +64,8 @@ input:required:valid, textarea:required:valid {
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
+    margin: 0 auto;
     font-size: 18px;
     max-width: 320px;
     height: 2327px;
@@ -76,8 +75,80 @@ body {
     color: #000;
 }
 
-.container {
-    max-width: 320px;
+.header {
+    width: 100%;
+    background-color: #242424;
+}
+
+.nav {
+    margin-top: 19px;
+}
+
+.nav__inner {
+    position: relative;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.nav__item {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: none;
+    padding: 11.4px 21.2px;
+    padding-right: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #826550;
+    border-bottom: 1px solid #71543f;
+}
+
+.nav__item:active {
+    background-color: #6a4d38;
+}
+
+.nav__item--visible {
+    display: block;
+}
+
+.nav__item--active {
+    display: block;
+    padding-left: 130px;
+    cursor: default;
+}
+
+.nav__item--active:active {
+    background-color: #826550;
+}
+
+.nav__item--login {
+    text-transform: none;
+    font-weight: normal;
+    padding-left: 48px;
+}
+
+.nav__item--login::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/login.png") no-repeat center;
+    left: 19px;
+    top: 16px;
 }
 
 /*!
@@ -1430,102 +1501,26 @@ body {
     transform: rotate(-90deg);
 }
 
-.hamburger-box {
-    top: 3px;
-}
-
-.header {
-    width: 100%;
-    background-color: #242424;
-}
-
-.header__logo {
-    display: block;
-    padding-top: 29px;
-    padding-left: 7px;
-    width: 100%;
-    height: 66px;
-    text-align: center;
-}
-
-.header__nav {
-    position: relative;
-}
-
-.header__nav-wrapper {
-    margin-top: 19px;
-}
-
-.header__nav-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: #000;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
-.header__nav-item {
-    color: inherit;
-    text-decoration: none;
-    position: relative;
-    display: none;
-    padding: 11.4px 21.2px;
-    padding-right: 0;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color: #826550;
-    border-bottom: 1px solid #71543f;
-}
-
-.header__nav-item:active {
-    background-color: #6a4d38;
-}
-
-.header__nav-item--visible {
-    display: block;
-}
-
-.header__nav-item--active {
-    display: block;
-    padding-left: 130px;
-    cursor: default;
-}
-
-.header__nav-item--active:active {
-    background-color: #826550;
-}
-
-.header__nav-item--login {
-    text-transform: none;
-    font-weight: normal;
-    padding-left: 48px;
-}
-
-.header__nav-item--login::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: url("../img/login.png") no-repeat center;
-    left: 19px;
-    top: 16px;
-}
-
-.header__nav-hamburger {
+.hamburger {
     position: absolute;
     outline: none;
     right: 0;
     top: 0;
 }
 
-.header__nav-hamburger:active {
+.hamburger:active {
     background-color: #6a4d38;
+}
+
+.hamburger-box {
+    top: 3px;
+}
+
+.logo {
+    display: block;
+    padding-top: 29px;
+    padding-left: 7px;
+    width: 100%;
+    height: 66px;
+    text-align: center;
 }

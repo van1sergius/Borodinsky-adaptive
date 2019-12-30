@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"sassVariablesHelper.route": "/app/src/assets/sass/_vars.sass"
+	}
+}

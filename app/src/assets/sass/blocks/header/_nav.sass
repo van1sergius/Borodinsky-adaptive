@@ -1,0 +1,42 @@
+.nav
+  margin-top: 19px
+
+.nav__inner
+  position: relative
+
+.nav__list
+  +reset-list
+  display: flex
+  flex-direction: column
+  margin-top: 10px
+
+.nav__item
+  +reset-link
+  position: relative
+  display: none
+  padding: 11.4px 21.2px 
+  padding-right: 0
+  color: $white
+  text-transform: uppercase
+  font-weight: 700
+  background-color: $accent
+  border-bottom: 1px solid #71543f
+  &:active
+    background-color: $accent-dark
+
+.nav__item--visible
+  display: block
+
+.nav__item--active
+  display: block
+  padding-left: 130px
+  cursor: default
+  &:active
+    background-color: $accent
+
+.nav__item--login
+  text-transform: none
+  font-weight: normal
+  padding-left: 48px
+  &::before
+    +icon(16px, 16px, '../img/login.png', 19px, 16px)
