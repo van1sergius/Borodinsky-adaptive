@@ -67,7 +67,6 @@ body {
     position: relative;
     margin: 0 auto;
     font-size: 18px;
-    max-width: 320px;
     height: 2327px;
     line-height: 27px;
     font-family: "PT Sans Narrow", sans-serif;
@@ -76,7 +75,7 @@ body {
 }
 
 .header {
-    width: 100%;
+    min-width: 242px;
     background-color: #242424;
 }
 
@@ -122,7 +121,8 @@ body {
 
 .nav__item--active {
     display: block;
-    padding-left: 130px;
+    padding-left: 0;
+    text-align: center;
     cursor: default;
 }
 
@@ -134,6 +134,11 @@ body {
     display: block;
     padding: 11.4px 21.2px;
     padding-right: 0;
+    text-align: left;
+}
+
+.nav__item--active.nav__item--visible {
+    color: #6a4d38;
 }
 
 .nav__item--login {

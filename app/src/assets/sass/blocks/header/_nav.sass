@@ -26,7 +26,8 @@
 
 .nav__item--active
   display: block
-  padding-left: 130px
+  padding-left: 0
+  text-align: center
   cursor: default
   &:active
     background-color: $accent
@@ -35,6 +36,10 @@
   display: block
   padding: 11.4px 21.2px 
   padding-right: 0
+  text-align: left
+
+.nav__item--active.nav__item--visible
+  color: $accent-dark
 
 .nav__item--login
   text-transform: none
