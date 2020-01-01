@@ -8,6 +8,7 @@ $hamburger-padding-y: 11.6px
 @import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss'
 
 .hamburger
+  +reset-mobile-active
   position: absolute
   outline: none
   right: 0
@@ -17,4 +18,8 @@ $hamburger-padding-y: 11.6px
 
 .hamburger-box
   top: 3px
+
+@media ( min-width: $tablet )
+  .hamburger
+    display: none
 
