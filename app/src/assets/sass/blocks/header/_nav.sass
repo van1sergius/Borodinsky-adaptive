@@ -25,6 +25,13 @@
   &:active
     background-color: $accent-dark
 
+.nav__link:active .nav__link-text
+  opacity: 0.3
+
+.nav__link--active:active .nav__link-text
+  opacity: 1
+  background-color: $accent-dark
+
 .nav__link--active
   display: block
   padding-left: 0
@@ -32,7 +39,7 @@
   border-bottom: 1px solid $accent-dark
   background-color: $accent-dark
   &:active
-    background-color: $accent
+    // background-color: $accent
 
   .nav__link-text
     padding-bottom: 23px
@@ -76,6 +83,10 @@
     &:hover
       color: $accent
 
+  .nav__link:active .nav__link-text
+    opacity: 1
+    background-color: transparent
+
   .nav__link--active
     &:hover
       color: $white
@@ -104,6 +115,7 @@
     &:active
       &::before
         background-image: url('../img/login.png')
+
 @media ( min-width: $desktop )
   .nav__list
     width: 960px
