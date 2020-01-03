@@ -79,6 +79,9 @@
   .nav__link--active
     &:hover
       color: $white
+    &:active
+      opacity: 1
+
     
   .nav__link--active > .nav__link-text
     border-bottom: 3px solid $accent
@@ -103,25 +106,25 @@
         background-image: url('../img/login.png')
 @media ( min-width: $desktop )
   .nav__list
-    // +transition-basic
     width: 960px
 
   .nav__link
-    // +transition-basic
     margin-right: 0  
     padding: 22px 31.5px
     &:active
       opacity: 1
+
     &:hover
       background-color: $white
       color: $black
-
-  .nav__link-text
-    &:active
-      color: $black !important
-      opacity: 0.3
-
   
+  .nav__link:active .nav__link-text
+    opacity: 0.3
+    color: $black
+
+  .nav__link--active:active .nav__link-text
+    opacity: 1
+    color: $white
 
   .nav__link--login
     position: relative
@@ -144,6 +147,9 @@
   .nav__link--active
     &:hover
       background-color: $black
+      color: $white
+    &:active
+      opacity: 1
       color: $white
 
   

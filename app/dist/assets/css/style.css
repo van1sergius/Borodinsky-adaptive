@@ -210,6 +210,10 @@ body {
         color: #fff;
     }
 
+    .nav__link--active:active {
+        opacity: 1;
+    }
+
     .nav__link--active > .nav__link-text {
         border-bottom: 3px solid #826550;
     }
@@ -259,9 +263,14 @@ body {
         color: #000;
     }
 
-    .nav__link-text:active {
-        color: #000 !important;
+    .nav__link:active .nav__link-text {
         opacity: 0.3;
+        color: #000;
+    }
+
+    .nav__link--active:active .nav__link-text {
+        opacity: 1;
+        color: #fff;
     }
 
     .nav__link--login {
@@ -290,6 +299,11 @@ body {
 
     .nav__link--active:hover {
         background-color: #000;
+        color: #fff;
+    }
+
+    .nav__link--active:active {
+        opacity: 1;
         color: #fff;
     }
 }
