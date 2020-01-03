@@ -10,7 +10,7 @@
   display: flex
   flex-direction: column
 
-.nav__item
+.nav__link
   +reset-link
   +reset-mobile-active
   position: relative
@@ -25,24 +25,25 @@
   &:active
     background-color: $accent-dark
 
-.nav__item--active
+.nav__link--active
   display: block
   padding-left: 0
   text-align: center
-  cursor: default
+  border-bottom: 1px solid $accent-dark
+  background-color: $accent-dark
   &:active
     background-color: $accent
 
-.nav__item--visible
+  .nav__link-text
+    padding-bottom: 23px
+
+.nav__link--visible
   display: block
   padding: 11.4px 21.2px 
   padding-right: 0
   text-align: left
 
-.nav__item--active.nav__item--visible
-  color: $accent-dark
-
-.nav__item--login
+.nav__link--login
   text-transform: none
   font-weight: normal
   padding-left: 48px
@@ -57,14 +58,14 @@
     height: 72px
   
   .nav__list
-    flex-direction: row
     +margin-auto
+    flex-direction: row
     width: 640px
 
-  .nav__item
+  .nav__link
     +transition-basic
     display: block
-    margin-right: 32px
+    margin-right: 31.8px
     padding: 22px 0
     background-color: transparent
     border-bottom: none
@@ -73,18 +74,17 @@
     &:hover
       color: $accent
 
-  .nav__item--active
-    border-bottom: 3px solid $accent
+  .nav__link--active
     &:hover
       color: $white
     
+  .nav__link--active > .nav__link-text
+    border-bottom: 3px solid $accent
 
-  .nav__item--visible
+  .nav__link--visible
 
-  .nav__item--active.nav__item--visible
-    color: $white
 
-  .nav__item--login
+  .nav__link--login
     margin-right: 0
     color: transparent
     &::before
@@ -95,4 +95,44 @@
       color: transparent
       &::before
         background-image: url('../img/login-hover.png')
+  
+@media ( min-width: $desktop )
+  .nav__list
+    // +transition-basic
+    width: 960px
+
+  .nav__link
+    // +transition-basic
+    margin-right: 0  
+    padding: 22px 31.5px
+    &:hover
+      background-color: $white
+      color: $black
+
+  
+
+  .nav__link--login
+    position: relative
+    margin-left: 77px
+    padding-left: 61px
+    color: $white
+    text-transform: uppercase
+    font-weight: 700
+    left: 5px
+    &::before
+      // +transition-basic
+      top: 28px
+      left: 27px   
+    &:hover
+      color: $black
+      &::before
+        background-image: url('../img/login-hover-desktop.png')
+
+  .nav__link--active
+    &:hover
+      background-color: black
+      color: $white
+
+  
+
   
