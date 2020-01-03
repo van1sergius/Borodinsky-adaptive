@@ -70,7 +70,9 @@
     background-color: transparent
     border-bottom: none
     &:active
+      color: $white !important
       background-color: transparent
+      opacity: 0.3
     &:hover
       color: $accent
 
@@ -86,6 +88,7 @@
 
   .nav__link--login
     margin-right: 0
+    font-size: 0
     color: transparent
     &::before
       +transition-basic
@@ -95,7 +98,9 @@
       color: transparent
       &::before
         background-image: url('../img/login-hover.png')
-  
+    &:active
+      &::before
+        background-image: url('../img/login.png')
 @media ( min-width: $desktop )
   .nav__list
     // +transition-basic
@@ -105,9 +110,16 @@
     // +transition-basic
     margin-right: 0  
     padding: 22px 31.5px
+    &:active
+      opacity: 1
     &:hover
       background-color: $white
       color: $black
+
+  .nav__link-text
+    &:active
+      color: $black !important
+      opacity: 0.3
 
   
 
@@ -115,6 +127,7 @@
     position: relative
     margin-left: 77px
     padding-left: 61px
+    font-size: inherit
     color: $white
     text-transform: uppercase
     font-weight: 700
@@ -130,7 +143,7 @@
 
   .nav__link--active
     &:hover
-      background-color: black
+      background-color: $black
       color: $white
 
   

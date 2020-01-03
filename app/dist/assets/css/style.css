@@ -197,7 +197,9 @@ body {
     }
 
     .nav__link:active {
+        color: #fff !important;
         background-color: transparent;
+        opacity: 0.3;
     }
 
     .nav__link:hover {
@@ -214,6 +216,7 @@ body {
 
     .nav__link--login {
         margin-right: 0;
+        font-size: 0;
         color: transparent;
     }
 
@@ -231,6 +234,10 @@ body {
     .nav__link--login:hover::before {
         background-image: url("../img/login-hover.png");
     }
+
+    .nav__link--login:active::before {
+        background-image: url("../img/login.png");
+    }
 }
 
 @media (min-width: 1200px) {
@@ -243,15 +250,25 @@ body {
         padding: 22px 31.5px;
     }
 
+    .nav__link:active {
+        opacity: 1;
+    }
+
     .nav__link:hover {
         background-color: #fff;
         color: #000;
+    }
+
+    .nav__link-text:active {
+        color: #000 !important;
+        opacity: 0.3;
     }
 
     .nav__link--login {
         position: relative;
         margin-left: 77px;
         padding-left: 61px;
+        font-size: inherit;
         color: #fff;
         text-transform: uppercase;
         font-weight: 700;
@@ -272,7 +289,7 @@ body {
     }
 
     .nav__link--active:hover {
-        background-color: black;
+        background-color: #000;
         color: #fff;
     }
 }
