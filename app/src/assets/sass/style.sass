@@ -39,9 +39,22 @@ body
 
 
 @import 'blocks/header/_header'
-@import 'blocks/header/_nav'
-@import 'blocks/header/_hamburger'
-@import 'blocks/header/_logo'
+@import 'blocks/header/nav/_nav'
+@import 'blocks/header/hamburger/_hamburger'
+@import 'blocks/header/logo/_logo'
+
+@media ( min-width: $tablet )
+	@import 'blocks/header/_header--tablet'
+	@import 'blocks/header/nav/_nav--tablet'
+	@import 'blocks/header/hamburger/_hamburger--tablet'
+	@import 'blocks/header/logo/_logo--tablet'
+@media ( min-width: $desktop )
+	@import 'blocks/header/_header--desktop'
+	@import 'blocks/header/nav/_nav--desktop'
+	@import 'blocks/header/hamburger/_hamburger--desktop'
+	@import 'blocks/header/logo/_logo--desktop'
+
+	
 
 
 	

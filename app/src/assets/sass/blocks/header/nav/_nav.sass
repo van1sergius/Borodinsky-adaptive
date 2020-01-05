@@ -1,0 +1,58 @@
+.nav
+  margin-top: 19px
+
+.nav__inner
+  position: relative
+  background-color: $black
+
+.nav__list
+  +reset-list
+  display: flex
+  flex-direction: column
+
+.nav__link
+  +reset-link
+  +reset-mobile-active
+  position: relative
+  display: none
+  padding: 11.4px 21.2px 
+  padding-right: 0
+  color: $white
+  text-transform: uppercase
+  font-weight: 700
+  background-color: $accent
+  border-bottom: 1px solid #71543f
+  &:active
+    background-color: $accent-dark
+
+.nav__link:active .nav__link-text
+  opacity: 0.3
+
+.nav__link--active:active .nav__link-text
+  opacity: 1
+  background-color: $accent-dark
+
+.nav__link--active
+  display: block
+  padding-left: 0
+  text-align: center
+  border-bottom: 1px solid $accent-dark
+  background-color: $accent-dark
+  &:active
+    // background-color: $accent
+
+  .nav__link-text
+    padding-bottom: 23px
+
+.nav__link--visible
+  display: block
+  padding: 11.4px 21.2px 
+  padding-right: 0
+  text-align: left
+
+.nav__link--login
+  text-transform: none
+  font-weight: normal
+  padding-left: 48px
+  &::before
+    +icon(16px, 16px, '../img/login.png', 19px, 16px)
