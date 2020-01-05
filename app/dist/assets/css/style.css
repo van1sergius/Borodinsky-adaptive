@@ -72,6 +72,7 @@ body {
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: bold;
     color: #000;
+    background-color: #242424;
 }
 
 .header {
@@ -1536,25 +1537,13 @@ body {
     display: block;
     padding-top: 29px;
     padding-left: 7px;
-    height: 66px;
     text-align: center;
-}
-
-@media (min-width: 768px) {
-    .logo {
-        display: none;
-        position: absolute;
-        content: url(../img/logo-tablet.png);
-        -webkit-transform: translate(-50%);
-        transform: translate(-50%);
-        left: 50%;
-        top: 200px;
-    }
 }
 
 @media (min-width: 768px) {
     .header {
         height: 469px;
+        background: url("../img/bg-tablet.jpg") no-repeat center;
         background-color: #242424;
     }
 
@@ -1642,17 +1631,26 @@ body {
     }
 
     .logo {
-        display: none;
+        display: block;
         position: absolute;
-        content: url(../img/logo-tablet.png);
+        padding: 0;
         -webkit-transform: translate(-50%);
         transform: translate(-50%);
         left: 50%;
-        top: 200px;
+        top: 111px;
+    }
+
+    .logo__image {
+        content: url(../img/logo-tablet.png);
     }
 }
 
 @media (min-width: 1200px) {
+    .header {
+        height: 720px;
+        background: url("../img/bg-desktop.jpg") no-repeat center;
+    }
+
     .nav__list {
         width: 960px;
     }
@@ -1713,5 +1711,13 @@ body {
     .nav__link--active:active {
         opacity: 1;
         color: #fff;
+    }
+
+    .logo {
+        top: 129px;
+    }
+
+    .logo__image {
+        content: url("../img/logo-desktop.png");
     }
 }
