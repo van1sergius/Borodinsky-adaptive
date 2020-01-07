@@ -34,15 +34,19 @@ body
 	
 	line-height: 27px
 	font-family: $default-font
-	font-weight: bold
 	color: $text
 	background-color: $grey
+
+.container
+	+container($mobile)
 
 
 @import 'blocks/header/_header'
 @import 'blocks/header/nav/_nav'
 @import 'blocks/header/hamburger/_hamburger'
 @import 'blocks/header/logo/_logo'
+@import 'blocks/stats/_stats'
+
 
 @media ( min-width: $tablet )
 	@import 'blocks/header/_header--tablet'

@@ -1,7 +1,7 @@
 $hamburger-layer-height: 2px
 $hamburger-layer-color: #fff
 $hamburger-layer-border-radius: 0
-$hamburger-layer-width: 36px
+$hamburger-layer-width: 40px
 $hamburger-layer-spacing: 7px
 $hamburger-padding-y: 11.6px
 
@@ -13,9 +13,12 @@ $hamburger-padding-y: 11.6px
   outline: none
   right: 0
   top: 0
-  &:active
-    background-color: $accent-dark
+  background-color: $accent-dark
 
 .hamburger-box
   top: 3px
+  left: 3px
 
+.hamburger-inner, 
+.hamburger-inner::after,.hamburger-inner::before
+  width: 36px
