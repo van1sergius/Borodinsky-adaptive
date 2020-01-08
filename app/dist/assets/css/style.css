@@ -1645,6 +1645,31 @@ body {
     padding-bottom: 9px;
 }
 
+.features {
+    margin-top: 41px;
+    text-align: center;
+    color: #fff;
+}
+
+.features__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95px;
+    height: 95px;
+}
+
+.features__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.features__description {
+    margin-top: -15px;
+    padding: 0 41px;
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
     .header {
         height: 469px;
