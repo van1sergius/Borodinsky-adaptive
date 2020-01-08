@@ -24,32 +24,29 @@
   border-bottom: 1px solid #71543f
   &:active
     background-color: $accent-dark
+ 
 
 .nav__link:active .nav__link-text
-  opacity: 0.3
-
-.nav__link--active:active .nav__link-text
-  opacity: 1
-  background-color: $accent-dark
+  // opacity: 0.3 
 
 .nav__link--active
   display: block
   padding-left: 0
   text-align: center
   border-bottom: 1px solid $accent-dark
+  &.nav__link--visible>.nav__link-text
+    opacity: 0.3
   &:active
     background-color: $accent
-    &>.nav__link-text
-      background-color: $accent
-
-  .nav__link-text
-    padding-bottom: 23px
+    
 
 .nav__link--visible
   display: block
   padding: 11.4px 21.2px 
   padding-right: 0
   text-align: left
+  &:active>.nav__link-text
+    opacity: 0.3
 
 .nav__link--login
   text-transform: none
