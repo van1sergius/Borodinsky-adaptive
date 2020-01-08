@@ -1,0 +1,35 @@
+@import '../../../../../../node_modules/slick-carousel/slick/slick.scss'
+
+.slick-dots 
+  +reset-list
+  +margin-auto
+  position: relative
+  width: 130px
+  height: 10px
+  bottom: 0
+  left: 0
+
+
+.slick-dots li
+  display: inline-block
+  margin-right: 26.4px
+  width: 7px
+  height: 7px
+  border: 1px solid $white
+  cursor: pointer;
+  transform: rotate(45deg)
+  &.slick-active 
+    background-color: $white
+    cursor: default
+  &:hover
+    background-color: $white
+    border: 2px solid $white
+  &:last-child 
+    margin-right: 0
+    
+.slick-dots li button 
+  display: none
+
+
+.slider-slide:focus 
+  outline: none !important
