@@ -1815,8 +1815,93 @@ body {
 }
 
 .news {
-    height: 600px;
+    padding-top: 44px;
+    height: 506px;
     background-color: #fff;
+    border-bottom: 1px solid #e5ddd5;
+}
+
+.news__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.news__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    margin-top: 30px;
+}
+
+.news__item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.news__date {
+    position: absolute;
+    display: block;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+    background-color: #000;
+    left: 20px;
+    top: 12px;
+}
+
+.news__date::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 10px;
+    background: url("../img/triangle-small.png") no-repeat center;
+    left: 0;
+    top: 100%;
+}
+
+.news__day {
+    font-size: 30px;
+}
+
+.news__text {
+    padding-left: 90px;
+    padding-right: 15px;
+}
+
+.news__button {
+    margin-left: auto;
+    margin-right: auto;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-top: -12px;
+    padding-top: 10px;
+    width: 280px;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #e5ddd5;
+}
+
+.news__button:hover {
+    border-color: #d5c9bd;
+}
+
+.news__button:active {
+    -webkit-tap-highlight-color: transparent;
+    border-color: #d5c9bd;
+    background-color: #d5c9bd;
+    opacity: 0.3;
 }
 
 @media (min-width: 768px) {
