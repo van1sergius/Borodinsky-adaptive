@@ -74,11 +74,6 @@ body {
     background-color: #242424;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 320px;
-}
-
 .header {
     position: relative;
     min-width: 242px;
@@ -1795,6 +1790,7 @@ body {
 
 .features {
     margin-top: 41px;
+    height: 330px;
     text-align: center;
     color: #fff;
 }
@@ -1816,6 +1812,11 @@ body {
     margin-top: -15px;
     padding: 0 41px;
     font-size: 20px;
+}
+
+.news {
+    height: 600px;
+    background-color: #fff;
 }
 
 @media (min-width: 768px) {
