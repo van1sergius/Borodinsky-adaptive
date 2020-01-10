@@ -1,7 +1,6 @@
 @import 'vars'
 @import 'fonts'
 @import 'mixins'
-@import 'libs/libs'
 
 *,
 *:before,
@@ -28,7 +27,8 @@ input, textarea
 body
 	position: relative
 	margin: 0 auto
-	
+	min-width: 320px
+
 	font-size: 18px
 	height: 2327px
 	
@@ -48,6 +48,7 @@ body
 @import 'blocks/features/features'
 @import 'blocks/news/news'
 @import 'blocks/reviews/reviews'
+@import 'blocks/footer/footer'
 
 
 @media ( min-width: $tablet )
