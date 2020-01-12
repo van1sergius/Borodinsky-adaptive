@@ -1640,6 +1640,20 @@ body {
     padding-bottom: 9px;
 }
 
+@media (min-width: 768px) {
+    .stats {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -183px;
+        width: 640px;
+    }
+
+    .stats__header {
+        display: -webkit-box;
+        display: flex;
+    }
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
