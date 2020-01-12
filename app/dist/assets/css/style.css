@@ -1938,6 +1938,31 @@ body {
     z-index: 4;
 }
 
+@media (min-width: 768px) {
+    .features {
+        text-align: left;
+    }
+
+    .features__inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 640px;
+    }
+
+    .features__item {
+        padding-left: 10px;
+    }
+
+    .features__image {
+        float: left;
+        margin: 0;
+    }
+
+    .features__description {
+        padding: 0;
+    }
+}
+
 .news {
     padding-top: 93px;
     height: 555px;
