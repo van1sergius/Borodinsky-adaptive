@@ -1536,7 +1536,7 @@ body {
 
 .logo {
     display: block;
-    padding-top: 25px;
+    padding-top: 28px;
     padding-left: 6px;
     text-align: center;
 }
@@ -1559,6 +1559,7 @@ body {
     color: #000;
     font-size: 30px;
     font-weight: bold;
+    line-height: 30px;
 }
 
 .stats__intro {
@@ -1572,7 +1573,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 11px;
+    margin-top: 16px;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -1615,7 +1616,7 @@ body {
 }
 
 .stats__value {
-    padding: 27px 0;
+    padding: 26px 0;
     padding-left: 20px;
     width: 55%;
     font-size: 40px;
@@ -1982,7 +1983,7 @@ body {
 
 .reviews__image {
     position: absolute;
-    left: 0;
+    left: -4px;
     top: 41px;
 }
 
@@ -2064,8 +2065,8 @@ body {
 }
 
 .social__icon:active {
-    background-color: #826550;
-    border: none;
+    background-color: #d5c9bd;
+    border-colol: #d5c9bd;
     opacity: 0.3;
 }
 
