@@ -1909,7 +1909,7 @@ body {
     position: absolute;
     width: 100%;
     height: 35%;
-    background: url("../img/triangle-nov2.svg") no-repeat bottom;
+    background: url("../img/triangle.svg") no-repeat bottom;
     background-size: cover;
     left: 0;
     bottom: -86px;
@@ -1940,7 +1940,16 @@ body {
 
 @media (min-width: 768px) {
     .features {
+        margin-top: 43px;
         text-align: left;
+        height: 455px;
+    }
+
+    .features::after {
+        background-image: url("../img/SVG/triangle.svg");
+        bottom: -80px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 
     .features__inner {
@@ -1949,13 +1958,32 @@ body {
         width: 640px;
     }
 
+    .features__slide {
+        margin-bottom: 41px;
+    }
+
+    .features__slide:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    .features__slide:nth-last-child(1) > .features__item {
+        border-bottom: none;
+    }
+
     .features__item {
-        padding-left: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 135px;
+        border-bottom: 1px solid #494949;
     }
 
     .features__image {
         float: left;
-        margin: 0;
+        padding-top: 3px;
+    }
+
+    .features__info {
+        padding-left: 129px;
     }
 
     .features__description {
@@ -2034,7 +2062,7 @@ body {
     display: block;
     margin-top: -12px;
     padding-top: 10px;
-    width: 280px;
+    width: 87%;
     height: 50px;
     font-size: 18px;
     text-transform: uppercase;
@@ -2109,6 +2137,17 @@ body {
     margin-top: -13px;
 }
 
+@media (min-width: 768px) {
+    .reviews::after {
+        display: none;
+    }
+
+    .reviews__slider > .slick-dots {
+        left: 28px;
+        top: -65px;
+    }
+}
+
 .footer {
     padding-top: 118px;
     background-color: #242424;
@@ -2135,7 +2174,7 @@ body {
     text-decoration: none;
     display: block;
     padding-top: 10px;
-    width: 280px;
+    width: 87%;
     height: 50px;
     font-size: 18px;
     text-transform: uppercase;
@@ -2160,17 +2199,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 26px;
-    width: 320px;
+    width: 100%;
     text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: flex;
 }
 
 .social__icon {
     padding-top: 33px;
-    width: 125px;
+    width: 100%;
     height: 100px;
-    border: 1px solid #fff;
+    border: 1px solid #3f3f3f;
 }
 
 .social__icon > svg {
@@ -2217,7 +2258,7 @@ body {
     display: block;
     margin-top: -6px;
     padding-top: 10px;
-    width: 280px;
+    width: 87%;
     height: 50px;
     font-size: 18px;
     text-transform: uppercase;
