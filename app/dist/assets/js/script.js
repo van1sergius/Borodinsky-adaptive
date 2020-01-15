@@ -13925,7 +13925,8 @@ module.exports = new MediaQueryDispatch();
 }));
 
 $(document).ready(function(){
-    $('.reviews__slider').slick({
+  $sliderReviews = $('.reviews__slider');
+    $sliderReviews.slick({
       arrows: false,
       dots: true,
       slidesToShow: 1,
@@ -13933,12 +13934,12 @@ $(document).ready(function(){
       mobileFirst: true
   });
 
-  $slider = $('.features__inner');
+  $featuresSlider = $('.features__inner');
 
 enquire.register('screen and (max-width: 767px)', {
   match : function() {
-    if ( !$slider.hasClass('slick-initialized') ) {
-      $slider.slick({
+    if ( !$featuresSlider.hasClass('slick-initialized') ) {
+      $featuresSlider.slick({
         arrows: false,
         dots: true,
         slidesToShow: 1,
@@ -13948,11 +13949,25 @@ enquire.register('screen and (max-width: 767px)', {
     }
   }, 
   unmatch : function() {
-    if ( $slider.hasClass('slick-initialized') ) {
-      $slider.slick('unslick');
+    if ( $featuresSlider.hasClass('slick-initialized') ) {
+      $featuresSlider.slick('unslick');
     }
   }
 });
+
+
+$(".reviews__slider-arrow-left").on("click", function(event) {
+  event.preventDefault();
+
+  $sliderReviews.slick('slickPrev');
+});
+
+$(".reviews__slider-arrow-right").on("click", function(event) {
+  event.preventDefault();
+
+  $sliderReviews.slick('slickNext');
+});
+
   });
 // Dropdown Menu
 document.querySelector('.hamburger').addEventListener('click', function() {

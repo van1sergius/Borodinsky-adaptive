@@ -1946,7 +1946,7 @@ body {
     }
 
     .features::after {
-        background-image: url("../img/SVG/triangle.svg");
+        background-image: url("../img/SVG/tablet-triangle.svg");
         bottom: -80px;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
@@ -2083,6 +2083,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    .news {
+        height: 364px;
+    }
+
     .news__inner {
         margin-left: auto;
         margin-right: auto;
@@ -2179,14 +2183,137 @@ body {
     margin-top: -13px;
 }
 
+.reviews__button {
+    margin-left: auto;
+    margin-right: auto;
+    color: inherit;
+    text-decoration: none;
+    display: none;
+    margin-top: -12px;
+    padding-top: 10px;
+    width: 87%;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #e5ddd5;
+}
+
+.reviews__button:hover {
+    border-color: #d5c9bd;
+}
+
+.reviews__button:active {
+    -webkit-tap-highlight-color: transparent;
+    border-color: #d5c9bd;
+    background-color: #d5c9bd;
+    opacity: 0.3;
+}
+
+.reviews__slider-controls {
+    display: none;
+}
+
 @media (min-width: 768px) {
+    .reviews {
+        height: 354px;
+    }
+
     .reviews::after {
         display: none;
     }
 
+    .reviews__inner {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding-top: 47px;
+        width: 640px;
+    }
+
+    .reviews__slider {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 542px;
+    }
+
     .reviews__slider > .slick-dots {
-        left: 28px;
-        top: -65px;
+        left: 0;
+        top: -7px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .reviews__slider > .slick-dots li {
+        position: relative;
+        background-color: #fff;
+        top: -11px;
+    }
+
+    .reviews__slider > div {
+        border: 1px solid #e5ddd5;
+        height: 160px;
+    }
+
+    .reviews__item {
+        padding-left: 100px;
+    }
+
+    .reviews__image {
+        content: url("../img/travis.png");
+        left: -11px;
+        top: 37px;
+    }
+
+    .reviews__title {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .reviews__button {
+        position: absolute;
+        display: block;
+        width: 160px;
+        top: 49px;
+        right: 0;
+    }
+
+    .reviews__slider-controls {
+        display: block;
+    }
+
+    .reviews__slider-arrow-left,
+  .reviews__slider-arrow-right {
+        position: absolute;
+        padding: 65px 0;
+        width: 50px;
+        height: 160px;
+        border: 1px solid #e5ddd5;
+        text-align: center;
+        top: 124px;
+    }
+
+    .reviews__slider-arrow-left > svg,
+    .reviews__slider-arrow-right > svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .reviews__slider-arrow-left:active svg,
+    .reviews__slider-arrow-right:active svg {
+        fill: #826550;
+    }
+
+    .reviews__slider-arrow-left {
+        left: 0;
+    }
+
+    .reviews__slider-arrow-right {
+        right: 0;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
@@ -2224,6 +2351,10 @@ body {
     text-align: center;
     border: 1px solid #3f3f3f;
     color: #fff;
+}
+
+.contacts__phone > span {
+    display: none;
 }
 
 .contacts__phone:hover {
@@ -2319,6 +2450,87 @@ body {
     border-color: #d5c9bd;
     background-color: #d5c9bd;
     opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 48px;
+        width: 640px;
+        height: 348px;
+    }
+
+    .footer__inner {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__contacts {
+        width: 70%;
+    }
+
+    .footer__social {
+        -webkit-box-ordinal-group: 3;
+        order: 2;
+        width: 100%;
+    }
+
+    .footer__copyright {
+        width: 30%;
+    }
+
+    .contacts {
+        text-align: left;
+    }
+
+    .contacts__title {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .contacts__address {
+        padding: 0;
+    }
+
+    .contacts__phone {
+        text-align: left;
+        margin-left: 0;
+        padding: 0;
+        width: 160px;
+        height: 22px;
+        font-weight: normal;
+        border: none;
+    }
+
+    .contacts__phone > span {
+        display: inline;
+        text-transform: none;
+    }
+
+    .contacts__phone:active {
+        background-color: transparent;
+    }
+
+    .copyright {
+        margin-top: 0;
+        text-align: right;
+    }
+
+    .copyright__text {
+        margin-top: 0;
+        padding-right: 38px;
+    }
+
+    .copyright__link {
+        margin-right: 0;
+        width: 160px;
+    }
+
+    .social {
+        margin-top: 36px;
+    }
 }
 
 @media (min-width: 768px) {

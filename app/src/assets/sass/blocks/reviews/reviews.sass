@@ -43,6 +43,30 @@
 .reviews__text
   margin-top: -13px
 
+.reviews__button
+  +margin-auto
+  +reset-link
+  display: none
+  margin-top: -12px
+  padding-top: 10px
+  width: 87%
+  height: 50px
+  font-size: 18px
+  text-transform: uppercase
+  font-weight: bold
+  text-align: center
+  border: 1px solid #e5ddd5
+  &:hover
+    border-color: #d5c9bd
+  &:active
+    +reset-mobile-active
+    border-color: #d5c9bd
+    background-color: #d5c9bd
+    opacity: 0.3
+
+.reviews__slider-controls
+  display: none
+
 @media ( min-width: $tablet )
   @import 'reviews--tablet'
   
