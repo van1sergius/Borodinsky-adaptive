@@ -1728,6 +1728,41 @@ body {
     }
 }
 
+@media (min-width: 1200px) {
+    .stats {
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+        display: -webkit-box;
+        display: flex;
+        margin-top: -159px;
+    }
+
+    .stats::before {
+        top: 12%;
+    }
+
+    .stats__header {
+        display: block;
+        width: 320px;
+        height: auto;
+    }
+
+    .stats__intro {
+        margin-top: 42px;
+        padding-left: 41px;
+    }
+
+    .stats__legend {
+        top: 247px;
+        left: -328px;
+    }
+
+    .stats__item {
+        width: 320px;
+    }
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
