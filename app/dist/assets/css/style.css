@@ -2518,9 +2518,14 @@ body {
     margin-right: auto;
     margin-top: 26px;
     width: 100%;
+}
+
+.social__text {
+    display: none;
+}
+
+.social__icons {
     text-align: center;
-    -webkit-box-pack: center;
-    justify-content: center;
     display: -webkit-box;
     display: flex;
 }
@@ -2573,6 +2578,8 @@ body {
     margin-right: auto;
     color: inherit;
     text-decoration: none;
+    -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
+    transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
     display: block;
     margin-top: -6px;
     padding-top: 10px;
@@ -2599,17 +2606,17 @@ body {
 
 @media (min-width: 768px) {
     .footer {
-        margin-left: auto;
-        margin-right: auto;
         padding-top: 48px;
-        width: 640px;
         height: 348px;
     }
 
     .footer__inner {
+        margin-left: auto;
+        margin-right: auto;
         display: -webkit-box;
         display: flex;
         flex-wrap: wrap;
+        width: 640px;
     }
 
     .footer__contacts {
@@ -2675,6 +2682,72 @@ body {
 
     .social {
         margin-top: 36px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        height: 198px;
+    }
+
+    .footer__inner {
+        flex-wrap: nowrap;
+        width: 960px;
+    }
+
+    .footer__social {
+        -webkit-box-ordinal-group: 1;
+        order: 0;
+    }
+
+    .contacts {
+        width: 80%;
+    }
+
+    .social {
+        margin-top: -18px;
+        padding-left: 91px;
+    }
+
+    .social__text {
+        display: block;
+        width: 116px;
+        color: #fff;
+    }
+
+    .social__icons {
+        margin-left: -25px;
+        margin-top: -5px;
+        width: 186px;
+    }
+
+    .social__icon {
+        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
+        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
+        margin-right: 6px;
+        width: 50px;
+        height: 50px;
+        padding-top: 13px;
+        cursor: pointer;
+    }
+
+    .social__icon > svg {
+        width: 21px !important;
+    }
+
+    .social__icon:hover {
+        border-color: #d5c9bd;
+    }
+
+    .social__icon:active {
+        -webkit-tap-highlight-color: transparent;
+        border-color: #d5c9bd;
+        background-color: #d5c9bd;
+        opacity: 0.3;
+    }
+
+    .social__icon--vk > svg {
+        width: 21px !important;
     }
 }
 
