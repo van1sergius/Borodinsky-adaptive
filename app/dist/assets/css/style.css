@@ -2480,6 +2480,91 @@ body {
     }
 }
 
+.portfolio {
+    background-color: #fff;
+}
+
+.portfolio__inner {
+    padding-top: 31px;
+}
+
+.portfolio__headline {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portfolio__button {
+    display: none;
+}
+
+.portfolio__list {
+    margin-top: 30px;
+}
+
+.portfolio__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.portfolio__text {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 14px;
+    width: 73%;
+}
+
+.portfolio__author {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.portfolio__comment {
+    margin-top: 12px;
+}
+
+.portfolio__service-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 60px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.portfolio__service-item--scissors::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 23px;
+    background: url("../img/scissors.png") no-repeat center;
+    left: -30px;
+}
+
+.portfolio__service-item--beard::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 23px;
+    background: url("../img/beard.png") no-repeat center;
+    left: -30px;
+}
+
+.portfolio__service-item--mustache::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 23px;
+    background: url("../img/mustache.png") no-repeat center;
+    left: -40px;
+}
+
 .footer {
     padding-top: 118px;
     background-color: #242424;
