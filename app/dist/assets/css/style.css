@@ -127,6 +127,7 @@ body {
     padding-left: 0;
     text-align: center;
     border-bottom: 1px solid #6a4d38;
+    pointer-events: none;
 }
 
 .nav__link--active.nav__link--visible > .nav__link-text {
@@ -2033,6 +2034,11 @@ body {
         text-align: center;
     }
 
+    .features::after {
+        bottom: -100px;
+        height: 35%;
+    }
+
     .features__inner {
         display: -webkit-box;
         display: flex;
@@ -2458,7 +2464,19 @@ body {
 
     .reviews__slider-arrow-left,
   .reviews__slider-arrow-right {
+        cursor: pointer;
         top: 138px;
+    }
+
+    .reviews__slider-arrow-left > svg,
+    .reviews__slider-arrow-right > svg {
+        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+    }
+
+    .reviews__slider-arrow-left:hover > svg,
+    .reviews__slider-arrow-right:hover > svg {
+        fill: #826550;
     }
 }
 
@@ -2578,8 +2596,8 @@ body {
     margin-right: auto;
     color: inherit;
     text-decoration: none;
-    -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
-    transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
+    -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+    transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
     display: block;
     margin-top: -6px;
     padding-top: 10px;
@@ -2722,8 +2740,8 @@ body {
     }
 
     .social__icon {
-        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
-        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
+        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
         margin-right: 6px;
         width: 50px;
         height: 50px;
@@ -2747,7 +2765,7 @@ body {
     }
 
     .social__icon--vk > svg {
-        width: 21px !important;
+        width: 18px !important;
     }
 }
 
@@ -2776,8 +2794,8 @@ body {
     }
 
     .nav__link {
-        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
-        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
+        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
         display: block;
         margin-right: 31.8px;
         padding: 22px 0;
@@ -2824,8 +2842,8 @@ body {
     }
 
     .nav__link--login::before {
-        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
-        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear;
+        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
         top: 29px;
         left: 0px;
     }

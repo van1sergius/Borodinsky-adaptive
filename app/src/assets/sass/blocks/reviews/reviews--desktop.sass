@@ -29,4 +29,10 @@
 
 .reviews__slider-arrow-left, 
 .reviews__slider-arrow-right
+  cursor: pointer
   top: 138px
+  >svg
+    +transition-basic
+  &:hover>svg
+    fill: $accent
+    
