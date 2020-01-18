@@ -2503,18 +2503,41 @@ body {
     margin-top: 30px;
 }
 
+.portfolio__item {
+    margin-bottom: 30px;
+}
+
 .portfolio__image {
     margin-left: auto;
     margin-right: auto;
+    position: relative;
     width: 90%;
     text-align: center;
+}
+
+.portfolio__image > img {
+    width: 96.7%;
+}
+
+.portfolio__image--best-work::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 176px;
+    height: 50px;
+    background: url("../img/best-work.png") no-repeat center;
+    left: 1.9%;
+    bottom: 31px;
 }
 
 .portfolio__text {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 14px;
-    width: 73%;
+    margin-top: -7px;
+    padding-top: 22px;
+    padding-left: 21px;
+    border: 1px solid #efe9e4;
+    width: 87%;
 }
 
 .portfolio__author {
@@ -2524,15 +2547,22 @@ body {
 
 .portfolio__comment {
     margin-top: 12px;
+    margin-bottom: 15px;
+    padding-right: 28px;
 }
 
 .portfolio__service-item {
     position: relative;
     display: inline-block;
-    margin-right: 60px;
-    padding-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 14px;
     text-transform: uppercase;
     font-size: 16px;
+    text-align: right;
+}
+
+.portfolio__service-item--scissors {
+    width: 93px;
 }
 
 .portfolio__service-item--scissors::before {
@@ -2542,7 +2572,12 @@ body {
     width: 45px;
     height: 23px;
     background: url("../img/scissors.png") no-repeat center;
-    left: -30px;
+    left: -9px;
+    top: 2px;
+}
+
+.portfolio__service-item--beard {
+    width: 88px;
 }
 
 .portfolio__service-item--beard::before {
@@ -2552,7 +2587,12 @@ body {
     width: 45px;
     height: 23px;
     background: url("../img/beard.png") no-repeat center;
-    left: -30px;
+    left: -11px;
+}
+
+.portfolio__service-item--mustache {
+    padding-right: 10px;
+    width: 82px;
 }
 
 .portfolio__service-item--mustache::before {
@@ -2562,7 +2602,7 @@ body {
     width: 45px;
     height: 23px;
     background: url("../img/mustache.png") no-repeat center;
-    left: -40px;
+    left: -10px;
 }
 
 .footer {
