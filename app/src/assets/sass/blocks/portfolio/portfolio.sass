@@ -2,13 +2,15 @@
   background-color: $white
 
 .portfolio__inner
-  padding-top: 31px
+  padding-top: 1px
+
+.portfolio__header
+  display: none
 
 .portfolio__headline
   font-size: 30px
   font-weight: bold
   text-transform: uppercase
-  text-align: center
 
 .portfolio__button
   display: none
@@ -69,4 +71,7 @@
     width: 82px
   &--mustache::before
     +icon(45px, 23px, '../img/mustache.png', -10px, null)
+
+@media ( min-width: $tablet )
+  @import 'portfolio--tablet'
   
