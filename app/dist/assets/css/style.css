@@ -2520,7 +2520,7 @@ body {
     text-align: center;
 }
 
-.portfolio__image > img {
+.portfolio__image > picture > img {
     width: 96.7%;
 }
 
@@ -2665,6 +2665,7 @@ body {
     }
 
     .portfolio__item {
+        position: relative;
         display: -webkit-box;
         display: flex;
     }
@@ -2674,8 +2675,12 @@ body {
         width: 270px;
     }
 
-    .portfolio__image > img {
+    .portfolio__image > picture img {
         height: 100%;
+        width: 100%;
+    }
+
+    .portfolio__image img {
         width: 100%;
     }
 
@@ -2685,7 +2690,95 @@ body {
 
     .portfolio__text {
         margin-top: 0;
+        padding-top: 42px;
+        padding-left: 50px;
         width: 370px;
+    }
+
+    .portfolio__comment {
+        margin-top: 25px;
+        margin-bottom: auto;
+        padding-right: 50px;
+    }
+
+    .portfolio__service {
+        position: absolute;
+        bottom: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio {
+        margin-top: -357px;
+    }
+
+    .portfolio__inner {
+        width: 960px;
+    }
+
+    .portfolio__list {
+        margin-top: 72px;
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+
+    .portfolio__item {
+        margin-top: 10px;
+        display: block;
+        width: 294px;
+    }
+
+    .portfolio__item:first-child {
+        margin-top: 0;
+        display: -webkit-box;
+        display: flex;
+        width: 960px;
+    }
+
+    .portfolio__item:first-child > .portfolio__image {
+        width: 480px;
+    }
+
+    .portfolio__item:first-child > .portfolio__text {
+        margin-top: 0;
+        padding-top: 136px;
+        padding-left: 39px;
+        padding-right: 85px;
+        width: 480px;
+    }
+
+    .portfolio__item:first-child img {
+        width: 100%;
+    }
+
+    .portfolio__image--best-work::after {
+        display: none;
+        left: 164%;
+        bottom: 83%;
+    }
+
+    .portfolio__image > picture > img {
+        width: 294px;
+    }
+
+    .portfolio__text {
+        margin-top: -7px;
+        padding-top: 28px;
+        padding-left: 34px;
+        padding-right: 0px;
+        width: auto;
+        height: 247px;
+    }
+
+    .portfolio__comment {
+        padding-right: 31px;
+    }
+
+    .portfolio__service {
+        bottom: 14px;
     }
 }
 

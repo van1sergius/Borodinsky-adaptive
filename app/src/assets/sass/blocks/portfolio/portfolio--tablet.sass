@@ -38,17 +38,33 @@
   margin-top: 38px
 
 .portfolio__item
+  position: relative
   display: flex
 
 .portfolio__image
   margin: 0
   width: 270px
-  &>img
+  // height: 100%
+  &>picture img
     height: 100%
+    width: 100%
+  & img
+    // height: 100%
     width: 100%
   &--best-work::after
     left: 0
 
 .portfolio__text
   margin-top: 0
+  padding-top: 42px
+  padding-left: 50px
   width: 370px
+
+.portfolio__comment
+  margin-top: 25px
+  margin-bottom: auto
+  padding-right: 50px
+
+.portfolio__service
+  position: absolute
+  bottom: 26px

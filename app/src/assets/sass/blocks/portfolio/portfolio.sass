@@ -26,7 +26,7 @@
   position: relative
   width: 90%
   text-align: center
-  &>img
+  &>picture>img
     width: 96.7%
   &--best-work::after
     +icon(176px, 50px, '../img/best-work.png', 1.9%, null)
@@ -74,4 +74,7 @@
 
 @media ( min-width: $tablet )
   @import 'portfolio--tablet'
+
+@media ( min-width: $desktop )
+  @import 'portfolio--desktop'
   
