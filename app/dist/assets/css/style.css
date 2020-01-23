@@ -68,7 +68,6 @@ body {
     margin: 0 auto;
     min-width: 320px;
     font-size: 18px;
-    height: 2327px;
     line-height: 27px;
     font-family: "PT Sans Narrow", sans-serif;
     color: #000;
@@ -2482,37 +2481,37 @@ body {
     }
 }
 
-.portfolio {
+.photo {
     background-color: #fff;
 }
 
-.portfolio__inner {
+.photo__inner {
     padding-top: 1px;
 }
 
-.portfolio__header {
+.photo__header {
     display: none;
 }
 
-.portfolio__headline {
+.photo__headline {
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.portfolio__button {
+.photo__button {
     display: none;
 }
 
-.portfolio__list {
+.photo__list {
     margin-top: 30px;
 }
 
-.portfolio__item {
+.photo__item {
     margin-bottom: 30px;
 }
 
-.portfolio__image {
+.photo__image {
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -2520,11 +2519,11 @@ body {
     text-align: center;
 }
 
-.portfolio__image > picture > img {
+.photo__image > picture > img {
     width: 96.7%;
 }
 
-.portfolio__image--best-work::after {
+.photo__image--best-work::after {
     content: "";
     position: absolute;
     display: block;
@@ -2535,7 +2534,7 @@ body {
     bottom: 31px;
 }
 
-.portfolio__text {
+.photo__text {
     margin-left: auto;
     margin-right: auto;
     margin-top: -7px;
@@ -2545,18 +2544,18 @@ body {
     width: 87%;
 }
 
-.portfolio__author {
+.photo__author {
     font-weight: bold;
     font-size: 24px;
 }
 
-.portfolio__comment {
+.photo__comment {
     margin-top: 12px;
     margin-bottom: 15px;
     padding-right: 28px;
 }
 
-.portfolio__service-item {
+.photo__service-item {
     position: relative;
     display: inline-block;
     margin-right: 30px;
@@ -2566,11 +2565,11 @@ body {
     text-align: right;
 }
 
-.portfolio__service-item--scissors {
+.photo__service-item--scissors {
     width: 93px;
 }
 
-.portfolio__service-item--scissors::before {
+.photo__service-item--scissors::before {
     content: "";
     position: absolute;
     display: block;
@@ -2581,11 +2580,11 @@ body {
     top: 2px;
 }
 
-.portfolio__service-item--beard {
+.photo__service-item--beard {
     width: 88px;
 }
 
-.portfolio__service-item--beard::before {
+.photo__service-item--beard::before {
     content: "";
     position: absolute;
     display: block;
@@ -2595,12 +2594,12 @@ body {
     left: -11px;
 }
 
-.portfolio__service-item--mustache {
+.photo__service-item--mustache {
     padding-right: 10px;
     width: 82px;
 }
 
-.portfolio__service-item--mustache::before {
+.photo__service-item--mustache::before {
     content: "";
     position: absolute;
     display: block;
@@ -2611,30 +2610,30 @@ body {
 }
 
 @media (min-width: 768px) {
-    .portfolio {
+    .photo {
         margin-top: -200px;
         background-color: white;
     }
 
-    .portfolio__inner {
+    .photo__inner {
         margin-left: auto;
         margin-right: auto;
         padding-top: 80px;
         width: 640px;
     }
 
-    .portfolio__header {
+    .photo__header {
         display: -webkit-box;
         display: flex;
         -webkit-box-pack: justify;
         justify-content: space-between;
     }
 
-    .portfolio__headline {
+    .photo__headline {
         font-size: 40px;
     }
 
-    .portfolio__button {
+    .photo__button {
         color: inherit;
         text-decoration: none;
         display: block;
@@ -2649,74 +2648,74 @@ body {
         border: 1px solid #e5ddd5;
     }
 
-    .portfolio__button:hover {
+    .photo__button:hover {
         border-color: #d5c9bd;
     }
 
-    .portfolio__button:active {
+    .photo__button:active {
         -webkit-tap-highlight-color: transparent;
         border-color: #d5c9bd;
         background-color: #d5c9bd;
         opacity: 0.3;
     }
 
-    .portfolio__list {
+    .photo__list {
         margin-top: 38px;
     }
 
-    .portfolio__item {
+    .photo__item {
         position: relative;
         display: -webkit-box;
         display: flex;
     }
 
-    .portfolio__image {
+    .photo__image {
         margin: 0;
         width: 270px;
     }
 
-    .portfolio__image > picture img {
+    .photo__image > picture img {
         height: 100%;
         width: 100%;
     }
 
-    .portfolio__image img {
+    .photo__image img {
         width: 100%;
     }
 
-    .portfolio__image--best-work::after {
+    .photo__image--best-work::after {
         left: 0;
     }
 
-    .portfolio__text {
+    .photo__text {
         margin-top: 0;
         padding-top: 42px;
         padding-left: 50px;
         width: 370px;
     }
 
-    .portfolio__comment {
+    .photo__comment {
         margin-top: 25px;
         margin-bottom: auto;
         padding-right: 50px;
     }
 
-    .portfolio__service {
+    .photo__service {
         position: absolute;
         bottom: 26px;
     }
 }
 
 @media (min-width: 1200px) {
-    .portfolio {
+    .photo {
         margin-top: -357px;
     }
 
-    .portfolio__inner {
+    .photo__inner {
         width: 960px;
     }
 
-    .portfolio__list {
+    .photo__list {
         margin-top: 72px;
         display: -webkit-box;
         display: flex;
@@ -2725,24 +2724,24 @@ body {
         justify-content: space-between;
     }
 
-    .portfolio__item {
+    .photo__item {
         margin-top: 10px;
         display: block;
         width: 294px;
     }
 
-    .portfolio__item:first-child {
+    .photo__item:first-child {
         margin-top: 0;
         display: -webkit-box;
         display: flex;
         width: 960px;
     }
 
-    .portfolio__item:first-child > .portfolio__image {
+    .photo__item:first-child > .photo__image {
         width: 480px;
     }
 
-    .portfolio__item:first-child > .portfolio__text {
+    .photo__item:first-child > .photo__text {
         margin-top: 0;
         padding-top: 136px;
         padding-left: 39px;
@@ -2751,21 +2750,21 @@ body {
         height: 487px;
     }
 
-    .portfolio__item:first-child img {
+    .photo__item:first-child img {
         width: 100%;
     }
 
-    .portfolio__image--best-work::after {
+    .photo__image--best-work::after {
         display: none;
         left: 164%;
         bottom: 83%;
     }
 
-    .portfolio__image > picture > img {
+    .photo__image > picture > img {
         width: 294px;
     }
 
-    .portfolio__text {
+    .photo__text {
         margin-top: -7px;
         padding-top: 28px;
         padding-left: 34px;
@@ -2774,11 +2773,11 @@ body {
         height: 247px;
     }
 
-    .portfolio__comment {
+    .photo__comment {
         padding-right: 31px;
     }
 
-    .portfolio__service {
+    .photo__service {
         bottom: 14px;
     }
 }
