@@ -71,7 +71,7 @@ body {
     line-height: 27px;
     font-family: "PT Sans Narrow", sans-serif;
     color: #000;
-    background-color: #242424;
+    background-color: #353535;
     z-index: -2;
 }
 
@@ -3069,6 +3069,89 @@ body {
     .social__icon--vk > svg {
         width: 18px !important;
     }
+}
+
+.price {
+    color: #fff;
+    background-color: #353535;
+}
+
+.price__inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding: 0 20px;
+}
+
+.price__headline {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price__table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.price__item {
+    font-size: 20px;
+}
+
+.price__index {
+    display: none;
+}
+
+.price__service {
+    display: block;
+}
+
+.price__wash {
+    display: block;
+    margin-bottom: 11px;
+}
+
+.price__value {
+    vertical-align: top;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.price__time {
+    margin-top: 14px;
+    padding-top: 17px;
+    padding-right: 44px;
+    width: 100%;
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #484848;
+}
+
+.price__time--text {
+    position: relative;
+    display: inline-block;
+    width: 122px;
+    text-align: left;
+    left: 56px;
+}
+
+.price__time--text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 58px;
+    height: 57px;
+    background: url("../img/clock.png") no-repeat center;
+    left: -92px;
+    top: -3px;
 }
 
 @media (min-width: 768px) {
