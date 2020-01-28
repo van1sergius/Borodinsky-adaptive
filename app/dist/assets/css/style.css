@@ -3226,6 +3226,51 @@ body {
     }
 }
 
+@media (min-width: 1200px) {
+    .price {
+        margin-bottom: 15px;
+    }
+
+    .price__inner {
+        max-width: 960px;
+    }
+
+    .price__wrapper {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+
+    .price__table {
+        width: 630px;
+    }
+
+    .price__time {
+        margin: 0;
+        padding-left: 0;
+        padding-top: 200px;
+        width: 270px;
+        height: 281px;
+    }
+
+    .price__time--text {
+        width: 135px;
+        font-size: 20px;
+        text-align: center;
+        text-transform: none;
+        font-weight: normal;
+    }
+
+    .price__time--text::before {
+        background-image: url("../img/desktop-clock.png");
+        width: 160px;
+        height: 160px;
+        left: -12px;
+        top: -175px;
+    }
+}
+
 @media (min-width: 768px) {
     .header {
         height: 469px;
