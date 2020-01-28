@@ -10,11 +10,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    preserveAspectRatio="none"
-   viewBox="0 0 1133.8583 120.47244"
+   viewBox="0 0 320.00001 33.999999"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="corner-light.svg">
+   sodipodi:docname="corner-white.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="44.8"
-     inkscape:cx="576.47174"
-     inkscape:cy="0.94456922"
+     inkscape:zoom="4"
+     inkscape:cx="148.29998"
+     inkscape:cy="2.8331995"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
@@ -49,7 +49,12 @@
   </metadata>
   <path
      style="fill:#f8f5f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 0,0.07488615 572.01015,120.46676 1133.8963,0.07488615 Z"
-     id="path4319"
+     d="m 0,0 0,34 160,0 z"
+     id="path4155"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#f8f5f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 320,2.4e-6 320,34 160,34 Z"
+     id="path4155-1"
      inkscape:connector-curvature="0" />
 </svg>
