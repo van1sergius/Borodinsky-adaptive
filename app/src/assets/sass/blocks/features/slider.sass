@@ -1,10 +1,12 @@
 @import '../../../../../../node_modules/slick-carousel/slick/slick.scss'
+.slick-slider *
+  outline: none
 
 .slick-dots 
   +reset-list
   +margin-auto
   position: relative
-  z-index: 4
+  z-index: 5
   width: 130px
   height: 10px
   bottom: 0
@@ -37,7 +39,7 @@
 
 .reviews__slider > .slick-dots
   left: 28px
-  top: -2px
+  top: -15px
 
 .reviews__slider > .slick-dots li
   border-color: $grey

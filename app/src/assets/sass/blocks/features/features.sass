@@ -3,20 +3,20 @@
 .features
   position: relative
   margin-top: 41px
-  height: 276px
+  height: 315px
   text-align: center
   color: $white
   z-index: 4
   &::after
+    position: absolute
+    display: block
     content: ""
-    position: absolute   
+    top: 100%
+    height: 40px
     width: 100%
-    height: 35%
-    background: url('../img/triangle.svg') no-repeat bottom
-    background-size: cover
-    left: 0
-    bottom: -86px
-    z-index: -1
+    background: url(../img/triangle-grey.svg) no-repeat center
+    background-size: 100% 40px
+    z-index: 2
 
 
 .features__image
