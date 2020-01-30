@@ -3422,6 +3422,10 @@ body {
     text-align: center;
 }
 
+.form__radio-button > input {
+    display: none;
+}
+
 .form__radio-label {
     position: relative;
     display: block;
@@ -3443,6 +3447,45 @@ body {
 
 input[type="radio"]:checked + .form__radio-label::before {
     box-shadow: inset 0 0 0 15px #ffffff, inset 0 0 0 16px #dbd0c5;
+}
+
+.form__extra {
+    padding-top: 50px;
+    border: none;
+}
+
+.form__extra > input {
+    display: none;
+}
+
+.form__extra-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.form__extra-label {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    display: block;
+    font-size: 18px;
+}
+
+.form__extra-label::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e5ddd5;
+    background-color: #fff;
+    left: 0;
+    top: -6px;
+}
+
+input[type="checkbox"]:checked + .form__extra-label::before {
+    background: url("../img/checked.png") no-repeat center;
 }
 
 @media (min-width: 768px) {
