@@ -78,6 +78,7 @@ input[type="radio"]:checked + .form__radio-label::before
 
 .form__extra
   padding-top: 50px
+  // width: 87%
   border: none
   &>input
     display: none
@@ -103,8 +104,32 @@ input[type="radio"]:checked + .form__radio-label::before
     border: 1px solid #e5ddd5
     // background: url('../img/checked.png') no-repeat center
     background-color: $white
-    left: 0
+    left: 5px
     top: -6px
+
+.form__submit
+  +margin-auto
+  +reset-link
+  display: block
+  margin-top: 10px
+  width: 87%
+  height: 50px
+  font-size: 18px
+  text-transform: uppercase
+  font-weight: bold
+  text-align: center
+  color: $white
+  font-family: $default-font
+  border: 1px solid #e5ddd5
+  background-color: $accent
+  &:hover
+    border-color: #d5c9bd
+  &:active
+    +reset-mobile-active
+    border-color: #d5c9bd
+    background-color: #d5c9bd
+    opacity: 0.3
+    color: $black
 
 input[type="checkbox"]:checked + .form__extra-label::before
   background: url('../img/checked.png') no-repeat center

@@ -3480,8 +3480,39 @@ input[type="radio"]:checked + .form__radio-label::before {
     height: 36px;
     border: 1px solid #e5ddd5;
     background-color: #fff;
-    left: 0;
+    left: 5px;
     top: -6px;
+}
+
+.form__submit {
+    margin-left: auto;
+    margin-right: auto;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    width: 87%;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-family: "PT Sans Narrow", sans-serif;
+    border: 1px solid #e5ddd5;
+    background-color: #826550;
+}
+
+.form__submit:hover {
+    border-color: #d5c9bd;
+}
+
+.form__submit:active {
+    -webkit-tap-highlight-color: transparent;
+    border-color: #d5c9bd;
+    background-color: #d5c9bd;
+    opacity: 0.3;
+    color: #000;
 }
 
 input[type="checkbox"]:checked + .form__extra-label::before {
