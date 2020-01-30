@@ -3328,7 +3328,7 @@ body {
 }
 
 .form {
-    width: 320px;
+    padding-top: 32px;
     height: 1600px;
     background-color: #fff;
 }
@@ -3342,6 +3342,52 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     display: none;
+}
+
+.form__contacts {
+    border: none;
+}
+
+.form__text {
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 18px;
+    border: 1px solid #e5ddd5;
+    resize: none;
+}
+
+.form__text:focus {
+    border-color: #bda594;
+}
+
+.form__text::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.form__text::-moz-placeholder {
+    color: #000000;
+}
+
+.form__text:-ms-input-placeholder {
+    color: #000000;
+}
+
+.form__text::-ms-input-placeholder {
+    color: #000000;
+}
+
+.form__text::placeholder {
+    color: #000000;
+}
+
+.form__text:nth-child(3) {
+    margin-bottom: 32px;
+}
+
+.form__text:nth-child(5) {
+    margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {

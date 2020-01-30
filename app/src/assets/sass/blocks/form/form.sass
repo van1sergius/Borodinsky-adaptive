@@ -1,5 +1,6 @@
 .form
-  width: 320px
+  padding-top: 32px
+  // width: 320px
   height: 1600px
   background-color: $white
 
@@ -11,6 +12,29 @@
   font-weight: bold
   text-transform: uppercase
   display: none
+
+.form__contacts
+  border: none
+
+.form__text
+  margin-bottom: 5px
+  padding: 10px
+  width: 100%
+  font-family: $default-font  
+  font-size: 18px
+  border: 1px solid #e5ddd5
+  resize: none
+  &:focus
+    border-color: lighten($accent, 25%)
+  &::placeholder
+    color: #000000
+  &:nth-child(3)
+    margin-bottom: 32px
+  &:nth-child(5)
+    margin-bottom: 32px
+
+
+  
 
 
 @media ( min-width: $tablet )
