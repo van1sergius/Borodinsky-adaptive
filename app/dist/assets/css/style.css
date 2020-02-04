@@ -3724,11 +3724,20 @@ input[type="checkbox"]:checked + .form__extra-item::before {
 @media (min-width: 1200px) {
     .form {
         margin-top: -357px;
-        height: 1270px;
+        height: 1510px;
     }
 
     .form__inner {
+        padding-top: 48px;
         width: 960px;
+    }
+
+    .form__contacts {
+        margin-top: 67px;
+    }
+
+    .form__text {
+        padding: 19px 25px;
     }
 
     .form__text:nth-child(1), .form__text:nth-child(2), .form__text:nth-child(3) {
@@ -3749,8 +3758,34 @@ input[type="checkbox"]:checked + .form__extra-item::before {
         margin-right: 0;
     }
 
+    .form__radio {
+        margin-top: 43px;
+    }
+
+    .form__radio-title {
+        width: 400px;
+    }
+
+    .form__radio-buttons {
+        padding-top: 34px;
+        width: 960px;
+        justify-content: space-around;
+    }
+
+    .form__radio-button {
+        width: 82px;
+    }
+
+    .form__extra-title {
+        width: 400px;
+    }
+
     .form__extra-items {
         width: 960px;
+    }
+
+    .form__submit {
+        margin-top: 31px;
     }
 }
 
