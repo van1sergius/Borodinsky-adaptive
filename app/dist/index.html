@@ -299,12 +299,16 @@
     </footer>
     <form class="signin">
             <fieldset class="signin__inner">
-                <legend class="signin__header">
-                    <h2 class="signin__title">Личный кабинет</h2>
-                    <p class="signin__title-text">Введите свой логин и пароль, чтобы войти</p>
+                <legend class="signin__title">
+                    Личный кабинет
                 </legend>
-    
-                input.signin__
+                <p class="signin__title-text">Введите свой логин и пароль, чтобы войти</p>
+                <input type="text" class="signin__login" name="login" id="login" placeholder="Логин">
+                <input type="password" class="signin__login" name="password" id="password" placeholder="Пароль">
+                <input type="checkbox" id="remember-me">
+                <label class="signin__remember-me" for="remember-me">Запомните меня</label>
+                <a href="#" class="signin__forget">Я забыл пароль!</a>
+                <button class="signin__submit" type="submit">Войти в личный кабинет</button>
             </fieldset>
     </form>
 <script src="assets/js/script.min.js"></script>
