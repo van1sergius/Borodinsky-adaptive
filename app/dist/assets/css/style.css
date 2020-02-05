@@ -150,19 +150,19 @@ body {
     opacity: 0.3;
 }
 
-.nav__link--login {
+.nav__link--signin {
     text-transform: none;
     font-weight: normal;
     padding-left: 48px;
 }
 
-.nav__link--login::before {
+.nav__link--signin::before {
     content: "";
     position: absolute;
     display: block;
     width: 16px;
     height: 16px;
-    background: url("../img/login.png") no-repeat center;
+    background: url("../img/signin.png") no-repeat center;
     left: 19px;
     top: 16px;
 }
@@ -3880,29 +3880,29 @@ input[type="checkbox"]:checked + .form__extra-item::before {
         border-bottom: 3px solid #826550;
     }
 
-    .nav__link--login {
+    .nav__link--signin {
         margin-right: 0;
         font-size: 0;
         color: transparent;
     }
 
-    .nav__link--login::before {
+    .nav__link--signin::before {
         -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
         transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
         top: 29px;
         left: 0px;
     }
 
-    .nav__link--login:hover {
+    .nav__link--signin:hover {
         color: transparent;
     }
 
-    .nav__link--login:hover::before {
-        background-image: url("../img/login-hover.png");
+    .nav__link--signin:hover::before {
+        background-image: url("../img/signin-hover.png");
     }
 
-    .nav__link--login:active::before {
-        background-image: url("../img/login.png");
+    .nav__link--signin:active::before {
+        background-image: url("../img/signin.png");
     }
 
     .hamburger {
@@ -3958,7 +3958,7 @@ input[type="checkbox"]:checked + .form__extra-item::before {
         color: #fff;
     }
 
-    .nav__link--login {
+    .nav__link--signin {
         position: relative;
         margin-left: 77px;
         padding-left: 61px;
@@ -3969,17 +3969,17 @@ input[type="checkbox"]:checked + .form__extra-item::before {
         left: 5px;
     }
 
-    .nav__link--login::before {
+    .nav__link--signin::before {
         top: 28px;
         left: 27px;
     }
 
-    .nav__link--login:hover {
+    .nav__link--signin:hover {
         color: #000;
     }
 
-    .nav__link--login:hover::before {
-        background-image: url("../img/login-hover-desktop.png");
+    .nav__link--signin:hover::before {
+        background-image: url("../img/signin-hover-desktop.png");
     }
 
     .nav__link--active:hover {
