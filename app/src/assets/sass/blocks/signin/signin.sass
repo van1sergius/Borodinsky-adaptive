@@ -1,5 +1,11 @@
 .signin
   position: absolute
+  width: 100%
+  background-color: #f8f5f2
+  top: 135px
+
+.signin__inner
+  position: relative
   display: flex
   flex-wrap: wrap
   justify-content: space-between
@@ -7,8 +13,6 @@
   padding-top: 33px
   width: 100%
   height: 408px
-  background-color: #f8f5f2
-  top: 135px
   &>input[type="checkbox"]
     display: none
 
@@ -21,6 +25,7 @@
   text-align: center
 
 .signin__text
+  position: relative
   margin: 0
   margin-top: -5px
   width: 100%
@@ -43,10 +48,18 @@
 
 .signin__login
   margin-top: 0
+  background-image: url('../img/user.png')
+  background-repeat: no-repeat
+  background-color: $white
+  background-position: 93% 16px
+  top: -2px
 
 .signin__password
-  position: relative
-  top: -15px
+  background-image: url('../img/lock.png')
+  background-repeat: no-repeat
+  background-color: $white
+  background-position: 93% 15px
+  top: -19px
 
 .signin__remember
   padding-left: 47px
@@ -77,14 +90,12 @@ input[type="checkbox"]:checked + .signin__remember::before
 .signin__forget
   +reset-link
   display: block
-  
   width: 38%
   text-align: right
-  
   &--text
     display: inline-block
     height: 23px
-    width: 106px
+    width: 104px
     border-bottom: 1px solid #000
 
 .signin__submit,
