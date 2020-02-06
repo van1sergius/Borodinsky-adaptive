@@ -131,10 +131,13 @@ input[type="radio"]:checked + .form__radio-label::before
     width: 36px
     height: 36px
     border: 1px solid #e5ddd5
-    // background: url('../img/checked.png') no-repeat center
     background-color: $white
     left: 20px
     top: -5px
+
+input[type="checkbox"]:checked + .form__extra-item::before
+  background: url('../img/checked.png') no-repeat center
+  background-color: #fff
 
 .form__submit
   +margin-auto
@@ -160,9 +163,7 @@ input[type="radio"]:checked + .form__radio-label::before
     opacity: 0.3
     color: $black
 
-input[type="checkbox"]:checked + .form__extra-item::before
-  background: url('../img/checked.png') no-repeat center
-  background-color: #fff
+
 
 @media ( min-width: $tablet )
   @import 'form--tablet'

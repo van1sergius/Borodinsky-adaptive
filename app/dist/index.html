@@ -298,18 +298,19 @@
         </div>
     </footer>
     <form class="signin">
-            <fieldset class="signin__inner">
-                <legend class="signin__title">
-                    Личный кабинет
-                </legend>
-                <p class="signin__title-text">Введите свой логин и пароль, чтобы войти</p>
-                <input type="text" class="signin__login" name="login" id="login" placeholder="Логин">
-                <input type="password" class="signin__login" name="password" id="password" placeholder="Пароль">
-                <input type="checkbox" id="remember-me">
-                <label class="signin__remember-me" for="remember-me">Запомните меня</label>
-                <a href="#" class="signin__forget">Я забыл пароль!</a>
-                <button class="signin__submit" type="submit">Войти в личный кабинет</button>
-            </fieldset>
+    
+        <h2 class="signin__title">
+            Личный кабинет
+        </h2>
+        <p class="signin__text">Введите свой логин и пароль, чтобы войти</p>
+        <input type="text" class="signin__login" name="login" id="login" placeholder="Логин">
+        <input type="password" class="signin__password" name="password" id="password" placeholder="Пароль">
+        <input type="checkbox" id="remember">
+        <label class="signin__remember" for="remember">Запомните меня</label>
+        <a href="#" class="signin__forget"><span class="signin__forget--text">Я забыл пароль!</span></a>
+        <button class="signin__submit" type="submit">Войти <span class="signin__submit--full">в личный кабинет</span></button>
+        <button class="signin__close">Закрыть</button>
+    
     </form>
 <script src="assets/js/script.min.js"></script>
 </body>
