@@ -69,9 +69,12 @@
   top: -19px
 
 .signin__remember
+  +reset-mobile-active
   padding-left: 47px
   position: relative
   display: block
+  cursor: pointer
+  user-select: none
   width: 60%
   height: 36px
   &::before
@@ -91,6 +94,7 @@ input[type="checkbox"]:checked + .signin__remember::before
 
 .signin__forget,
 .signin__remember
+  user-select: none
   position: relative
   top: -10px
 
@@ -99,6 +103,14 @@ input[type="checkbox"]:checked + .signin__remember::before
   display: block
   width: 38%
   text-align: right
+  &:hover
+    color: $accent
+  &:hover>span
+    border-bottom: 1px solid $accent
+  &:active
+    color: #000
+  &:active>span
+    border-bottom: 1px solid #000
   &--text
     display: inline-block
     height: 23px
@@ -140,9 +152,11 @@ input[type="checkbox"]:checked + .signin__remember::before
     display: none
 
 .signin__close
+  +reset-mobile-active
   background-color: transparent
   color: #000
   outline: none
+  cursor: pointer
   &:active
     background-color: transparent
     

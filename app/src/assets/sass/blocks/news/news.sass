@@ -1,6 +1,6 @@
 .news
-  padding-top: 93px
-  height: 555px
+  padding-top: 50px
+  height: 485px
   background-color: #f8f5f2
   border-bottom: 1px solid #e5ddd5
   z-index: 2
@@ -15,8 +15,13 @@
   margin-top: 30px
 
 .news__item
+  +margin-auto
+  min-height: 100px
+  padding-bottom: 18px
+  width: 88%
   position: relative
-  margin-bottom: 11%
+  &:first-child
+    border-bottom: 1px solid #e5ddd5
   &:last-child
     display: none
 
@@ -31,7 +36,7 @@
   line-height: 15px
   color: $white
   background-color: $black
-  left: 20px
+  left: 4px
   top: 12px
   &::after
     +icon(50px, 10px, '../img/triangle-small.png', 0, 100%)
@@ -40,15 +45,15 @@
   font-size: 30px
 
 .news__text
-  padding-left: 90px
-  padding-right: 15px
+  margin-bottom: 0
+  padding-left: 75px
 
 .news__button
   +margin-auto
   +reset-link
   display: block
-  margin-top: -12px
-  padding-top: 10px
+  margin-top: 2px
+  padding: 10px
   width: 87%
   height: 50px
   font-size: 18px

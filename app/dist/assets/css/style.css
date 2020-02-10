@@ -3659,11 +3659,11 @@ input, textarea {
 }
 
 input:focus:required:invalid, textarea:focus:required:invalid {
-    border-color: red;
+    border-color: #ff6b66;
 }
 
 input:required:valid, textarea:required:valid {
-    border-color: green;
+    border-color: #e5ddd5;
 }
 
 body {
@@ -5523,7 +5523,7 @@ body {
 
 .reviews__slider > .slick-dots {
     left: 28px;
-    top: -12px;
+    top: -2px;
 }
 
 .reviews__slider > .slick-dots li {
@@ -5540,9 +5540,9 @@ body {
 }
 
 .features {
+    padding-bottom: 17px;
     position: relative;
     margin-top: 41px;
-    height: 315px;
     text-align: center;
     color: #fff;
     z-index: 4;
@@ -5672,8 +5672,8 @@ body {
 }
 
 .news {
-    padding-top: 93px;
-    height: 555px;
+    padding-top: 50px;
+    height: 485px;
     background-color: #f8f5f2;
     border-bottom: 1px solid #e5ddd5;
     z-index: 2;
@@ -5695,8 +5695,16 @@ body {
 }
 
 .news__item {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100px;
+    padding-bottom: 18px;
+    width: 88%;
     position: relative;
-    margin-bottom: 11%;
+}
+
+.news__item:first-child {
+    border-bottom: 1px solid #e5ddd5;
 }
 
 .news__item:last-child {
@@ -5714,7 +5722,7 @@ body {
     line-height: 15px;
     color: #fff;
     background-color: #000;
-    left: 20px;
+    left: 4px;
     top: 12px;
 }
 
@@ -5734,8 +5742,8 @@ body {
 }
 
 .news__text {
-    padding-left: 90px;
-    padding-right: 15px;
+    margin-bottom: 0;
+    padding-left: 75px;
 }
 
 .news__button {
@@ -5744,8 +5752,8 @@ body {
     color: inherit;
     text-decoration: none;
     display: block;
-    margin-top: -12px;
-    padding-top: 10px;
+    margin-top: 2px;
+    padding: 10px;
     width: 87%;
     height: 50px;
     font-size: 18px;
@@ -5794,6 +5802,10 @@ body {
         width: 320px;
     }
 
+    .news__item:first-child {
+        border-bottom: none;
+    }
+
     .news__date {
         left: 0;
     }
@@ -5834,8 +5846,8 @@ body {
 }
 
 .reviews {
+    padding-bottom: 21px;
     position: relative;
-    height: 235px;
     background-color: #f8f5f2;
 }
 
@@ -6426,13 +6438,18 @@ body {
 }
 
 .footer {
-    padding-top: 69px;
+    padding-top: 41px;
     padding-bottom: 24px;
     background-color: #242424;
 }
 
 .footer--portfolio {
     padding-top: 58px;
+}
+
+.footer__inner {
+    padding-top: 30px;
+    border-top: 1px solid #3f3f3f;
 }
 
 .contacts {
@@ -6462,6 +6479,7 @@ body {
     color: inherit;
     text-decoration: none;
     display: block;
+    margin-top: 18px;
     padding-top: 10px;
     width: 87%;
     height: 50px;
@@ -7514,9 +7532,15 @@ input[type="checkbox"]:checked + .form__extra-item::before {
 }
 
 .signin__remember {
+    -webkit-tap-highlight-color: transparent;
     padding-left: 47px;
     position: relative;
     display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     width: 60%;
     height: 36px;
 }
@@ -7540,6 +7564,10 @@ input[type="checkbox"]:checked + .signin__remember::before {
 
 .signin__forget,
 .signin__remember {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     position: relative;
     top: -10px;
 }
@@ -7550,6 +7578,22 @@ input[type="checkbox"]:checked + .signin__remember::before {
     display: block;
     width: 38%;
     text-align: right;
+}
+
+.signin__forget:hover {
+    color: #826550;
+}
+
+.signin__forget:hover > span {
+    border-bottom: 1px solid #826550;
+}
+
+.signin__forget:active {
+    color: #000;
+}
+
+.signin__forget:active > span {
+    border-bottom: 1px solid #000;
 }
 
 .signin__forget--text {
@@ -7601,9 +7645,11 @@ input[type="checkbox"]:checked + .signin__remember::before {
 }
 
 .signin__close {
+    -webkit-tap-highlight-color: transparent;
     background-color: transparent;
     color: #000;
     outline: none;
+    cursor: pointer;
 }
 
 .signin__close:active {
@@ -7676,6 +7722,10 @@ input[type="checkbox"]:checked + .signin__remember::before {
         border: none;
         right: -174px;
         top: 61px;
+    }
+
+    .signin__close:hover {
+        opacity: 50%;
     }
 
     .signin__submit {
