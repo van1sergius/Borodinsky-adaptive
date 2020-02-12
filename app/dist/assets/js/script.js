@@ -13984,13 +13984,13 @@ document.querySelector('.hamburger').addEventListener('click', function() {
 })
 
 $(document).ready(function() {
-	var loc = window.location.pathname;
-    if (loc !== '/') {
-        $('.nav__item').find('a').each(function() {
-            $(this).toggleClass('nav__link--active', $(this).attr('href') ==    loc);
-         });
+	// var loc = window.location.pathname;
+    // if (loc !== '/') {
+    //     $('.nav__item').find('a').each(function() {
+    //         $(this).toggleClass('nav__link--active', $(this).attr('href') ==    loc);
+    //      });
     
-    console.log(loc);
+    // console.log(loc);
 }
 
 
