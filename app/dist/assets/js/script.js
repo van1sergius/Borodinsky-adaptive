@@ -13989,11 +13989,6 @@ $(document).ready(function() {
         $('.nav__item').find('a').each(function() {
             $(this).toggleClass('nav__link--active', $(this).attr('href') ==    loc);
          });
-
-    if (loc === '/portfolio.html') {
-        $('.header').addClass('header--portfolio');
-        $('.footer').addClass('footer--portfolio');
-    }
     
     console.log(loc);
 }
