@@ -3675,7 +3675,6 @@ body {
     font-family: "PT Sans Narrow", sans-serif;
     color: #000;
     background-color: #353535;
-    z-index: -2;
 }
 
 .lds-ripple {
@@ -3739,7 +3738,6 @@ body {
     position: relative;
     min-width: 242px;
     background-color: #242424;
-    z-index: -1;
 }
 
 .nav {
@@ -5424,6 +5422,10 @@ body {
     .stats__legend {
         top: 247px;
         left: -328px;
+    }
+
+    .stats__table tbody {
+        width: 640px;
     }
 
     .stats__item {
