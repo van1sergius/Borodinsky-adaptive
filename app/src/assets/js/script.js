@@ -2,11 +2,12 @@
 
 // const enquire = require("enquire.js");//del
 
+//= ../../../../node_modules/picturefill/dist/picturefill.js
 //= ../../../../node_modules/jquery/dist/jquery.js
 //= ../../../../node_modules/enquire.js/dist/enquire.js
 //= fragments/features/slider.js
 //= fragments/header/hamburger.js
-// ../../../../node_modules/picturefill/dist/picturefill.js
+
 
 // Preloader
 document.body.onload = function() {
