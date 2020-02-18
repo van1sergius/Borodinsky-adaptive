@@ -6,6 +6,15 @@
 //= ../../../../node_modules/enquire.js/dist/enquire.js
 //= fragments/features/slider.js
 //= fragments/header/hamburger.js
+// ../../../../node_modules/picturefill/dist/picturefill.js
+
+// Preloader
+document.body.onload = function() {
+    var preloader = document.getElementById('page-preloader');
+        if ( !preloader.classList.contains('done') ) {
+            preloader.classList.add('done');
+        };
+};
 
 $(document).ready(function() {
 	var loc = window.location.pathname;

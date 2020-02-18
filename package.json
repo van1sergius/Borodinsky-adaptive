@@ -30,6 +30,7 @@
     "jquery": "^3.4.1",
     "jquery-plainmodal": "^1.0.1",
     "panini": "^1.6.3",
+    "picturefill": "^3.0.3",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {

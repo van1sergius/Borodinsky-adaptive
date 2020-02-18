@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 
     <meta charset="UTF-8">
@@ -26,18 +27,29 @@
     
     <title>Portfolio</title>
     
-    
+
 </head>
+
 <body>
+
+    <div class="preloader" id="page-preloader">
+        <div class="loader">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        
+    </div>
+
+    
 
     <header class="header">
     
         <a class="logo">
             <picture>
+                <!--[if IE]><video style="display: none;"><![endif]-->
                 <source srcset="assets/img/logo-desktop.png" media="(min-width: 1200px)">
     
                 <source srcset="assets/img/logo-tablet.png" media="(min-width: 768px) and (max-width: 1200px)">
-    
+                <!--[if IE]></video><![endif]-->
                 <img class="logo__image" src="assets/img/logo-small.png" alt="Барбершоп Бородинский">
             </picture>
             
@@ -68,148 +80,148 @@
         </nav>
         
     </header>
-<main>
+    <main>
 
-    
-    <section class="photo">
-        <div class="photo__inner">
-            <div class="photo__header">
-                <div class="photo__headline">Наши работы</div>
-    
-                <a href="/" class="photo__button">На главную</a>
+        
+        <section class="photo">
+            <div class="photo__inner">
+                <div class="photo__header">
+                    <div class="photo__headline">Наши работы</div>
+        
+                    <a href="/" class="photo__button">На главную</a>
+                </div>
+        
+                <div class="photo__list">
+                    <div class="photo__item">
+                        <div class="photo__image photo__image--best-work">
+                            <picture>
+                                <source srcset="assets/img/1-photo-desktop.jpg" media="(min-width: 1200px)">
+                                <source srcset="assets/img/1-photo-tablet.jpg" media="(min-width: 768px) and (max-width: 1200px)" >
+                                <img src="assets/img/1-photo.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="photo__text">
+                            <b class="photo__author">Лжепётр Мчиславский</b>
+                            <p class="photo__comment">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+                            <div class="photo__service">
+                                <div class="photo__service-item photo__service-item--scissors">Стрижка</div>
+                                <div class="photo__service-item photo__service-item--beard">Бритье</div>
+                                <div class="photo__service-item photo__service-item--mustache">Усы</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo__item">
+                        <div class="photo__image">
+                            <picture>
+                                <source srcset="assets/img/2-photo-desktop.jpg" media="(min-width: 1200px)">
+                                <source srcset="assets/img/2-photo-tablet.jpg" media="(min-width: 768px)">
+                                <img src="assets/img/2-photo.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="photo__text">
+                            <b class="photo__author">Саша Мальцев</b>
+                            <p class="photo__comment">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
+                            <div class="photo__service">
+                                <div class="photo__service-item photo__service-item--scissors">Стрижка</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo__item">
+                        <div class="photo__image">
+                            <picture>
+                                <source srcset="assets/img/3-photo-desktop.jpg" media="(min-width: 1200px)">
+                                <source srcset="assets/img/3-photo-tablet.jpg" media="(min-width: 768px)">
+                                <img src="assets/img/3-photo.jpg" alt="">
+                            </picture>
+                            
+                        </div>
+                        <div class="photo__text">
+                            <b class="photo__author">Владимир Иваныч</b>
+                            <p class="photo__comment">К зимнему сезону — готов!</p>
+                            <div class="photo__service">
+                                <div class="photo__service-item photo__service-item--beard">Борода</div>
+                                <div class="photo__service-item photo__service-item--mustache">Усы</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo__item">
+                        <div class="photo__image">
+                            <picture>
+                                <source srcset="assets/img/4-photo-desktop.jpg" media="(min-width: 1200px)">
+                                <source srcset="assets/img/4-photo-tablet.jpg" media="(min-width: 768px)">
+                                <img src="assets/img/4-photo.jpg" alt="">
+                            </picture>
+                            
+                        </div>
+                        <div class="photo__text">
+                            <b class="photo__author">Винстон Синий</b>
+                            <p class="photo__comment">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+                            <div class="photo__service">
+                                <div class="photo__service-item photo__service-item--scissors">Стрижка</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="photo__list">
-                <div class="photo__item">
-                    <div class="photo__image photo__image--best-work">
-                        <picture>
-                            <source srcset="assets/img/1-photo-desktop.jpg" media="(min-width: 1200px)">
-                            <source srcset="assets/img/1-photo-tablet.jpg" media="(min-width: 768px) and (max-width: 1200px)" >
-                            <img src="assets/img/1-photo.jpg" alt="">
-                        </picture>
-                    </div>
-                    <div class="photo__text">
-                        <b class="photo__author">Лжепётр Мчиславский</b>
-                        <p class="photo__comment">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
-                        <div class="photo__service">
-                            <div class="photo__service-item photo__service-item--scissors">Стрижка</div>
-                            <div class="photo__service-item photo__service-item--beard">Бритье</div>
-                            <div class="photo__service-item photo__service-item--mustache">Усы</div>
-                        </div>
-                    </div>
+        </section>
+        
+        <div class="price">
+            <div class="price__inner">
+                <h2 class="price__headline">Прейскурант</h2>
+        
+                <div class="price__wrapper">
+                    <table class="price__table">
+                        <tbody>
+                            <tr class="price__item">
+                                <td class="price__index">1</td>
+                                <td class="price__service">Классическая стрижка</td>
+                                <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
+                                        class="price__wash--parentheses">)</span></td>
+                                <td class="price__value">1 500 руб.</td>
+                            </tr>
+                            <tr class="price__item">
+                                <td class="price__index">2</td>
+                                <td class="price__service">Современный вариант</td>
+                                <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
+                                        class="price__wash--parentheses">)</span></td>
+                                <td class="price__value">1 500 руб.</td>
+                            </tr>
+                            <tr class="price__item">
+                                <td class="price__index">3</td>
+                                <td class="price__service">Индивидуальный подход</td>
+                                <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
+                                        class="price__wash--parentheses">)</span></td>
+                                <td class="price__value">2 000 руб.</td>
+                            </tr>
+                            <tr class="price__item">
+                                <td class="price__index">4</td>
+                                <td class="price__service">Бритьё бороды</td>
+                                <td class="price__wash"><span class="price__wash--parentheses">(</span>без мытья<span
+                                        class="price__wash--parentheses">)</span></td>
+                                <td class="price__value">500 руб.</td>
+                            </tr>
+                            <tr class="price__item">
+                                <td class="price__index">5</td>
+                                <td class="price__service">Бритьё головы</td>
+                                <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
+                                        class="price__wash--parentheses">)</span></td>
+                                <td class="price__value">1 000 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        
+                    <p class="price__time">
+                        <span class="price__time--text">C 10:00 до 14:00 скидка 20%</span>
+                    </p>
                 </div>
-                <div class="photo__item">
-                    <div class="photo__image">
-                        <picture>
-                            <source srcset="assets/img/2-photo-desktop.jpg" media="(min-width: 1200px)">
-                            <source srcset="assets/img/2-photo-tablet.jpg" media="(min-width: 768px)">
-                            <img src="assets/img/2-photo.jpg" alt="">
-                        </picture>
-                    </div>
-                    <div class="photo__text">
-                        <b class="photo__author">Саша Мальцев</b>
-                        <p class="photo__comment">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
-                        <div class="photo__service">
-                            <div class="photo__service-item photo__service-item--scissors">Стрижка</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo__item">
-                    <div class="photo__image">
-                        <picture>
-                            <source srcset="assets/img/3-photo-desktop.jpg" media="(min-width: 1200px)">
-                            <source srcset="assets/img/3-photo-tablet.jpg" media="(min-width: 768px)">
-                            <img src="assets/img/3-photo.jpg" alt="">
-                        </picture>
-                        
-                    </div>
-                    <div class="photo__text">
-                        <b class="photo__author">Владимир Иваныч</b>
-                        <p class="photo__comment">К зимнему сезону — готов!</p>
-                        <div class="photo__service">
-                            <div class="photo__service-item photo__service-item--beard">Борода</div>
-                            <div class="photo__service-item photo__service-item--mustache">Усы</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="photo__item">
-                    <div class="photo__image">
-                        <picture>
-                            <source srcset="assets/img/4-photo-desktop.jpg" media="(min-width: 1200px)">
-                            <source srcset="assets/img/4-photo-tablet.jpg" media="(min-width: 768px)">
-                            <img src="assets/img/4-photo.jpg" alt="">
-                        </picture>
-                        
-                    </div>
-                    <div class="photo__text">
-                        <b class="photo__author">Винстон Синий</b>
-                        <p class="photo__comment">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
-                        <div class="photo__service">
-                            <div class="photo__service-item photo__service-item--scissors">Стрижка</div>
-                        </div>
-                    </div>
-                </div>
+        
+        
             </div>
         </div>
-    </section>
-    
-    <div class="price">
-        <div class="price__inner">
-            <h2 class="price__headline">Прейскурант</h2>
-    
-            <div class="price__wrapper">
-                <table class="price__table">
-                    <tbody>
-                        <tr class="price__item">
-                            <td class="price__index">1</td>
-                            <td class="price__service">Классическая стрижка</td>
-                            <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
-                                    class="price__wash--parentheses">)</span></td>
-                            <td class="price__value">1 500 руб.</td>
-                        </tr>
-                        <tr class="price__item">
-                            <td class="price__index">2</td>
-                            <td class="price__service">Современный вариант</td>
-                            <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
-                                    class="price__wash--parentheses">)</span></td>
-                            <td class="price__value">1 500 руб.</td>
-                        </tr>
-                        <tr class="price__item">
-                            <td class="price__index">3</td>
-                            <td class="price__service">Индивидуальный подход</td>
-                            <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
-                                    class="price__wash--parentheses">)</span></td>
-                            <td class="price__value">2 000 руб.</td>
-                        </tr>
-                        <tr class="price__item">
-                            <td class="price__index">4</td>
-                            <td class="price__service">Бритьё бороды</td>
-                            <td class="price__wash"><span class="price__wash--parentheses">(</span>без мытья<span
-                                    class="price__wash--parentheses">)</span></td>
-                            <td class="price__value">500 руб.</td>
-                        </tr>
-                        <tr class="price__item">
-                            <td class="price__index">5</td>
-                            <td class="price__service">Бритьё головы</td>
-                            <td class="price__wash"><span class="price__wash--parentheses">(</span>с мытьём головы<span
-                                    class="price__wash--parentheses">)</span></td>
-                            <td class="price__value">1 000 руб.</td>
-                        </tr>
-                    </tbody>
-                </table>
-    
-                <p class="price__time">
-                    <span class="price__time--text">C 10:00 до 14:00 скидка 20%</span>
-                </p>
-            </div>
-    
-    
-        </div>
-    </div>
-    
+        
 
-</main>
-    
+    </main>
+
 
     <footer class="footer">
         <div class="footer__inner">
@@ -292,6 +304,7 @@
         </form>
     </div>
 
-<script src="assets/js/script.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>

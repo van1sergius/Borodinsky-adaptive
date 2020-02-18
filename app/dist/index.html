@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 
     <meta charset="UTF-8">
@@ -26,18 +27,29 @@
     
     <title>Barbershop</title>
     
-    
+
 </head>
+
 <body>
+
+    <div class="preloader" id="page-preloader">
+        <div class="loader">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        
+    </div>
+
+    
 
     <header class="header">
     
         <a class="logo">
             <picture>
+                <!--[if IE]><video style="display: none;"><![endif]-->
                 <source srcset="assets/img/logo-desktop.png" media="(min-width: 1200px)">
     
                 <source srcset="assets/img/logo-tablet.png" media="(min-width: 768px) and (max-width: 1200px)">
-    
+                <!--[if IE]></video><![endif]-->
                 <img class="logo__image" src="assets/img/logo-small.png" alt="Барбершоп Бородинский">
             </picture>
             
@@ -68,217 +80,217 @@
         </nav>
         
     </header>
-<main>
+    <main>
 
-    
-    
-    <section class="stats">
-    
-        <header class="stats__header">
-    
-            <span class="stats__slogan">Стрижка у нас это выгодно!</span>
-    
-            <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-    
-            
-        </header>
-    
-        <table class="stats__table">
-    
-            <tr class="stats__item">
-                <td class="stats__value">1 500<span class="stats__value--asterisk">*</span class="asterisk"></td>
-                <td class="stats__field">рублей вложений</td>
-            </tr>
-            <tr class="stats__item">
-                <td class="stats__value">7 200</td>
-                <td class="stats__field">секунд времени мастера</td>
-            </tr>
-            <tr class="stats__item">
-                <td class="stats__value">90 000</td>
-                <td class="stats__field">постриженных волос</td>
-            </tr>
-            <tr class="stats__item">
-                <td class="stats__value">500 000<span class="stats__value--asterisk">*</span></td>
-                <td class="stats__field">лайков и комплиментов</td>
-            </tr>
-    
-        </table>
         
-        <span class="stats__legend">* — приведённые данные ложь</span>
-    
-        </div>
-    </section>
-    <section class="features">
-        <div class="features__inner">
-            <div class="features__slide">
-                <div class="features__item">
-                    <div class="features__image">
-                        <img src="assets/img/1adv.png" alt="adv">
-                    </div>
-                    <div class="features__info">
-                        <h3 class="features__title">
-                            Быстро
-                        </h3>
-                        <p class="features__description">
-                            Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
-                            стрижки-минутки
-                        </p>
-                    </div>
-    
-                </div>
-            </div>
-            <div class="features__slide">
-                <div class="features__item">
-                    <div class="features__image">
-                        <img src="assets/img/2adv.png" alt="adv">
-                    </div>
-                    <div class="features__info">
-                        <h3 class="features__title">
-                            Круто
-                        </h3>
-                        <p class="features__description">
-                            Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино.
-                            Во всяком случае внешне.
-    
-                        </p>
-                    </div>
-    
-                </div>
-            </div>
-            <div class="features__slide">
-                <div class="features__item">
-                    <div class="features__image">
-                        <img src="assets/img/3adv.png" alt="adv">
-    
-                    </div>
-                    <div class="features__info">
-                        <h3 class="features__title">
-                            Дорого
-                        </h3>
-                        <p class="features__description">
-                            Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт
-                            определённый статус?
-                        </p>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="news">
-        <div class="news__inner">
-            <h2 class="news__title">
-                Новости и акции
-            </h2>
+        
+        <section class="stats">
+        
+            <header class="stats__header">
+        
+                <span class="stats__slogan">Стрижка у нас это выгодно!</span>
+        
+                <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        
+                
+            </header>
+        
+            <table class="stats__table">
+        
+                <tr class="stats__item">
+                    <td class="stats__value">1 500<span class="stats__value--asterisk">*</span class="asterisk"></td>
+                    <td class="stats__field">рублей вложений</td>
+                </tr>
+                <tr class="stats__item">
+                    <td class="stats__value">7 200</td>
+                    <td class="stats__field">секунд времени мастера</td>
+                </tr>
+                <tr class="stats__item">
+                    <td class="stats__value">90 000</td>
+                    <td class="stats__field">постриженных волос</td>
+                </tr>
+                <tr class="stats__item">
+                    <td class="stats__value">500 000<span class="stats__value--asterisk">*</span></td>
+                    <td class="stats__field">лайков и комплиментов</td>
+                </tr>
+        
+            </table>
             
-            <ul class="news__list">
-                <li class="news__item">
-                    <time class="news__date"><b class="news__day">29<br></b> сент</time>
-                    <p class="news__text">
-                        Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.
-                    </p>
-                </li>
-                <li class="news__item">
-                    <time class="news__date"><b class="news__day">19<br></b> сент</time>
-                    <p class="news__text">
-                        В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!
-                    </p>
-                </li>
-                <li class="news__item">
-                    <time class="news__date"><b class="news__day">9<br></b> сент</time>
-                    <p class="news__text">
-                        Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
-                    </p>
-                </li>
-            </ul>
-            <a href="#" class="news__button">показать все</a>
-        </div>
-    </section>
-    <section class="reviews">
-        <div class="reviews__inner">
-            <h2 class="reviews__title">Отзывы о нас</h2>
-    
-            <div class="reviews__slider">
-                <div class="">
-                    <div class="reviews__item">
-                        <picture class="reviews__image">
-                            <source srcset="assets/img/travis--desktop.png" media="(min-width: 1200px)">
-    
-                            <source srcset="assets/img/travis.png"
-                                media="(min-width: 768px) and (max-width: 1200px)">
-    
-                            <img src="assets/img/slider-img.png" alt="">
-                        </picture>
-    
-                        <p class="reviews__author">Трэвис Баркер</p>
-                        <p class="reviews__text">
-                            Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                        </p>
+            <span class="stats__legend">* — приведённые данные ложь</span>
+        
+            </div>
+        </section>
+        <section class="features">
+            <div class="features__inner">
+                <div class="features__slide">
+                    <div class="features__item">
+                        <div class="features__image">
+                            <img src="assets/img/1adv.png" alt="adv">
+                        </div>
+                        <div class="features__info">
+                            <h3 class="features__title">
+                                Быстро
+                            </h3>
+                            <p class="features__description">
+                                Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
+                                стрижки-минутки
+                            </p>
+                        </div>
+        
                     </div>
                 </div>
-    
-                <div class="">
-                    <div class="reviews__item">
-                        <picture class="reviews__image">
-                            <source srcset="assets/img/travis--desktop.png" media="(min-width: 1200px)">
-    
-                            <source srcset="assets/img/travis.png"
-                                media="(min-width: 768px) and (max-width: 1200px)">
-    
-                            <img src="assets/img/slider-img.png" alt="">
-                        </picture>
-                        <p class="reviews__author">Трэвис Баркер</p>
-                        <p class="reviews__text">
-                            Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                        </p>
+                <div class="features__slide">
+                    <div class="features__item">
+                        <div class="features__image">
+                            <img src="assets/img/2adv.png" alt="adv">
+                        </div>
+                        <div class="features__info">
+                            <h3 class="features__title">
+                                Круто
+                            </h3>
+                            <p class="features__description">
+                                Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино.
+                                Во всяком случае внешне.
+        
+                            </p>
+                        </div>
+        
                     </div>
                 </div>
-    
-                <div class="">
-                    <div class="reviews__item">
-                        <picture class="reviews__image">
-                            <source srcset="assets/img/travis--desktop.png" media="(min-width: 1200px)">
-    
-                            <source srcset="assets/img/travis.png"
-                                media="(min-width: 768px) and (max-width: 1200px)">
-    
-                            <img src="assets/img/slider-img.png" alt="">
-                        </picture>
-                        <p class="reviews__author">Трэвис Баркер</p>
-                        <p class="reviews__text">
-                            Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                        </p>
+                <div class="features__slide">
+                    <div class="features__item">
+                        <div class="features__image">
+                            <img src="assets/img/3adv.png" alt="adv">
+        
+                        </div>
+                        <div class="features__info">
+                            <h3 class="features__title">
+                                Дорого
+                            </h3>
+                            <p class="features__description">
+                                Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт
+                                определённый статус?
+                            </p>
+                        </div>
+        
                     </div>
                 </div>
             </div>
-    
-            <div class="reviews__slider-controls">
-                <div class="reviews__slider-arrow-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20.78">
-                        <title>arrow</title>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <polygon points="0 10.39 18 20.79 18 0 0 10.39" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="reviews__slider-arrow-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20.78">
-                        <title>arrow</title>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <polygon points="0 10.39 18 20.79 18 0 0 10.39" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
+        </section>
+        <section class="news">
+            <div class="news__inner">
+                <h2 class="news__title">
+                    Новости и акции
+                </h2>
+                
+                <ul class="news__list">
+                    <li class="news__item">
+                        <time class="news__date"><b class="news__day">29<br></b> сент</time>
+                        <p class="news__text">
+                            Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.
+                        </p>
+                    </li>
+                    <li class="news__item">
+                        <time class="news__date"><b class="news__day">19<br></b> сент</time>
+                        <p class="news__text">
+                            В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!
+                        </p>
+                    </li>
+                    <li class="news__item">
+                        <time class="news__date"><b class="news__day">9<br></b> сент</time>
+                        <p class="news__text">
+                            Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
+                        </p>
+                    </li>
+                </ul>
+                <a href="#" class="news__button">показать все</a>
             </div>
-            <a href="#" class="reviews__button">Оставить свой</a>
-        </div>
-    </section>
-</main>
-    
+        </section>
+        <section class="reviews">
+            <div class="reviews__inner">
+                <h2 class="reviews__title">Отзывы о нас</h2>
+        
+                <div class="reviews__slider">
+                    <div class="">
+                        <div class="reviews__item">
+                            <picture class="reviews__image">
+                                <source srcset="assets/img/travis--desktop.png" media="(min-width: 1200px)">
+        
+                                <source srcset="assets/img/travis.png"
+                                    media="(min-width: 768px) and (max-width: 1200px)">
+        
+                                <img src="assets/img/slider-img.png" alt="">
+                            </picture>
+        
+                            <p class="reviews__author">Трэвис Баркер</p>
+                            <p class="reviews__text">
+                                Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="">
+                        <div class="reviews__item">
+                            <picture class="reviews__image">
+                                <source srcset="assets/img/travis--desktop.png" media="(min-width: 1200px)">
+        
+                                <source srcset="assets/img/travis.png"
+                                    media="(min-width: 768px) and (max-width: 1200px)">
+        
+                                <img src="assets/img/slider-img.png" alt="">
+                            </picture>
+                            <p class="reviews__author">Трэвис Баркер</p>
+                            <p class="reviews__text">
+                                Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="">
+                        <div class="reviews__item">
+                            <picture class="reviews__image">
+                                <source srcset="assets/img/travis--desktop.png" media="(min-width: 1200px)">
+        
+                                <source srcset="assets/img/travis.png"
+                                    media="(min-width: 768px) and (max-width: 1200px)">
+        
+                                <img src="assets/img/slider-img.png" alt="">
+                            </picture>
+                            <p class="reviews__author">Трэвис Баркер</p>
+                            <p class="reviews__text">
+                                Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="reviews__slider-controls">
+                    <div class="reviews__slider-arrow-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20.78">
+                            <title>arrow</title>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <polygon points="0 10.39 18 20.79 18 0 0 10.39" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="reviews__slider-arrow-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20.78">
+                            <title>arrow</title>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <polygon points="0 10.39 18 20.79 18 0 0 10.39" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <a href="#" class="reviews__button">Оставить свой</a>
+            </div>
+        </section>
+    </main>
+
 
     <footer class="footer">
         <div class="footer__inner">
@@ -361,6 +373,7 @@
         </form>
     </div>
 
-<script src="assets/js/script.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>
