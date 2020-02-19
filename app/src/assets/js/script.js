@@ -1,21 +1,38 @@
-// const enquire = require("enquire.js");
-
-// const enquire = require("enquire.js");//del
-
 //= ../../../../node_modules/picturefill/dist/picturefill.js
+//= ../../../../node_modules/bowser/bundled.js
 //= ../../../../node_modules/jquery/dist/jquery.js
 //= ../../../../node_modules/enquire.js/dist/enquire.js
 //= fragments/features/slider.js
 //= fragments/header/hamburger.js
 
+window.addEventListener("load", function() {
+    // PARSE USER AGENT
+    var result = bowser.getParser(navigator.userAgent).getResult();
+   
+    // BROWSER INFO
+    console.log(result.browser.name);
+    console.log(result.browser.version);
+    console.log(result.engine);
+   
+    // OPERATING SYSTEM
+    console.log(result.os.name);
+    console.log(result.os.version);
+    console.log(result.os.versionName);
+   
+    // PLATFORM
+    console.log(result.platform.type);
 
-// Preloader
-document.body.onload = function() {
-    var preloader = document.getElementById('page-preloader');
-        if ( !preloader.classList.contains('done') ) {
-            preloader.classList.add('done');
-        };
-};
+    if (result.browser.name === 'Internet Explorer') {
+        $('.social__icon').addClass('ie');
+        $('.news__date').addClass('ie');
+    };
+
+    if (result.browser.name === 'Microsoft Edge') {
+        $('.news__date').addClass('edge');
+    };
+
+  });
+
 
 $(document).ready(function() {
 	var loc = window.location.pathname;
