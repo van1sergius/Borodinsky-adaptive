@@ -3677,279 +3677,6 @@ body {
     background-color: #353535;
 }
 
-.header {
-    position: relative;
-    min-width: 242px;
-    background-color: #242424;
-}
-
-.logo {
-    display: block;
-    padding-top: 28px;
-    padding-left: 6px;
-    text-align: center;
-}
-
-.nav {
-    margin-top: 19px;
-}
-
-.nav__inner {
-    position: relative;
-    background-color: #000;
-}
-
-.nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: #000;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-}
-
-.nav__link {
-    color: inherit;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-    display: none;
-    padding: 11.4px 21.2px;
-    padding-right: 0;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color: #826550;
-    border-bottom: 1px solid #71543f;
-}
-
-.nav__link:active {
-    background-color: #6a4d38;
-}
-
-.nav__link--active {
-    display: block;
-    padding-left: 0;
-    text-align: center;
-    border-bottom: 1px solid #6a4d38;
-    pointer-events: none;
-}
-
-.nav__link--active.nav__link--visible > .nav__link-text {
-    opacity: 0.3;
-}
-
-.nav__link--active:active {
-    background-color: #826550;
-}
-
-.nav__link--visible {
-    display: block;
-    padding: 11.4px 21.2px;
-    padding-right: 0;
-    text-align: left;
-}
-
-.nav__link--visible:active > .nav__link-text {
-    opacity: 0.3;
-}
-
-.nav__link--login {
-    text-transform: none;
-    font-weight: normal;
-    padding-left: 48px;
-}
-
-.nav__link--login::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: url("../img/login.png") no-repeat center;
-    left: 19px;
-    top: 16px;
-}
-
-@media (min-width: 768px) {
-    .header {
-        height: 469px;
-        background: url("../img/bg-tablet.jpg") no-repeat center;
-        background-color: #242424;
-    }
-
-    .logo {
-        display: block;
-        position: absolute;
-        padding: 0;
-        -webkit-transform: translate(-50%);
-        transform: translate(-50%);
-        left: 50%;
-        top: 111px;
-    }
-
-    .nav {
-        margin-top: 0;
-    }
-
-    .nav__inner {
-        height: 72px;
-    }
-
-    .nav__list {
-        margin-left: auto;
-        margin-right: auto;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        flex-direction: row;
-        width: 640px;
-    }
-
-    .nav__link {
-        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
-        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
-        display: block;
-        margin-right: 31.8px;
-        padding: 22px 0;
-        background-color: transparent;
-        border-bottom: none;
-    }
-
-    .nav__link:active {
-        color: #fff !important;
-        background-color: transparent;
-        opacity: 0.3;
-    }
-
-    .nav__link:hover {
-        color: #826550;
-    }
-
-    .nav__link:active .nav__link-text {
-        opacity: 1;
-        background-color: transparent;
-    }
-
-    .nav__link--active > .nav__link-text {
-        opacity: 1 !important;
-        padding-bottom: 23px;
-    }
-
-    .nav__link--active:hover {
-        color: #fff;
-    }
-
-    .nav__link--active:active {
-        opacity: 1;
-    }
-
-    .nav__link--active > .nav__link-text {
-        border-bottom: 3px solid #826550;
-    }
-
-    .nav__link--login {
-        margin-right: 0;
-        font-size: 0;
-        color: transparent;
-    }
-
-    .nav__link--login::before {
-        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
-        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
-        top: 29px;
-        left: 0px;
-    }
-
-    .nav__link--login:hover {
-        color: transparent;
-    }
-
-    .nav__link--login:hover::before {
-        background-image: url("../img/login-hover.png");
-    }
-
-    .nav__link--login:active::before {
-        background-image: url("../img/login.png");
-    }
-}
-
-@media (min-width: 1200px) {
-    .header {
-        height: 720px;
-        background: url("../img/bg-desktop.jpg") no-repeat center;
-    }
-
-    .logo {
-        top: 129px;
-    }
-
-    .nav__list {
-        width: 960px;
-    }
-
-    .nav__link {
-        margin-right: 0;
-        padding: 22px 31.5px;
-    }
-
-    .nav__link:active {
-        opacity: 1;
-    }
-
-    .nav__link:hover {
-        background-color: #fff;
-        color: #000;
-    }
-
-    .nav__link:active .nav__link-text {
-        opacity: 0.3;
-        color: #000;
-    }
-
-    .nav__link--active:active .nav__link-text {
-        opacity: 1;
-        color: #fff;
-    }
-
-    .nav__link--login {
-        position: relative;
-        margin-left: 77px;
-        padding-left: 61px;
-        font-size: inherit;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 700;
-        left: 5px;
-    }
-
-    .nav__link--login::before {
-        top: 28px;
-        left: 27px;
-    }
-
-    .nav__link--login:hover {
-        color: #000;
-    }
-
-    .nav__link--login:hover::before {
-        background-image: url("../img/login-hover-desktop.png");
-    }
-
-    .nav__link--active:hover {
-        background-color: #000;
-        color: #fff;
-    }
-
-    .nav__link--active:active {
-        opacity: 1;
-        color: #fff;
-    }
-}
-
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -5317,6 +5044,283 @@ body {
 .hamburger-inner,
 .hamburger-inner::after, .hamburger-inner::before {
     width: 36px;
+}
+
+.header {
+    position: relative;
+    min-width: 242px;
+    background-color: #242424;
+}
+
+.logo {
+    display: block;
+    padding-top: 28px;
+    padding-left: 6px;
+    text-align: center;
+}
+
+.nav {
+    margin-top: 19px;
+}
+
+.nav__inner {
+    position: relative;
+    background-color: #000;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.nav__link {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    display: none;
+    padding: 11.4px 21.2px;
+    padding-right: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #826550;
+    border-bottom: 1px solid #71543f;
+}
+
+.nav__link:active {
+    background-color: #6a4d38;
+}
+
+.nav__link--active {
+    display: block;
+    padding-left: 0;
+    text-align: center;
+    border-bottom: 1px solid #6a4d38;
+    pointer-events: none;
+}
+
+.nav__link--active.nav__link--visible > .nav__link-text {
+    opacity: 0.3;
+}
+
+.nav__link--active:active {
+    background-color: #826550;
+}
+
+.nav__link--visible {
+    display: block;
+    padding: 11.4px 21.2px;
+    padding-right: 0;
+    text-align: left;
+}
+
+.nav__link--visible:active > .nav__link-text {
+    opacity: 0.3;
+}
+
+.nav__link--login {
+    text-transform: none;
+    font-weight: normal;
+    padding-left: 48px;
+}
+
+.nav__link--login::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/login.png") no-repeat center;
+    left: 19px;
+    top: 16px;
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .header {
+        height: 469px;
+        background: url("../img/bg-tablet.jpg") no-repeat center;
+        background-color: #242424;
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        padding: 0;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        left: 50%;
+        top: 111px;
+    }
+
+    .nav {
+        margin-top: 0;
+    }
+
+    .nav__inner {
+        height: 72px;
+    }
+
+    .nav__list {
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        width: 640px;
+    }
+
+    .nav__link {
+        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        display: block;
+        margin-right: 31.8px;
+        padding: 22px 0;
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .nav__link:active {
+        color: #fff !important;
+        background-color: transparent;
+        opacity: 0.3;
+    }
+
+    .nav__link:hover {
+        color: #826550;
+    }
+
+    .nav__link:active .nav__link-text {
+        opacity: 1;
+        background-color: transparent;
+    }
+
+    .nav__link--active > .nav__link-text {
+        opacity: 1 !important;
+        padding-bottom: 23px;
+    }
+
+    .nav__link--active:hover {
+        color: #fff;
+    }
+
+    .nav__link--active:active {
+        opacity: 1;
+    }
+
+    .nav__link--active > .nav__link-text {
+        border-bottom: 3px solid #826550;
+    }
+
+    .nav__link--login {
+        margin-right: 0;
+        font-size: 0;
+        color: transparent;
+    }
+
+    .nav__link--login::before {
+        -webkit-transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        transition: border 0.1s linear, color 0.1s linear, background 0.1s linear, fill 0.1s linear;
+        top: 29px;
+        left: 0px;
+    }
+
+    .nav__link--login:hover {
+        color: transparent;
+    }
+
+    .nav__link--login:hover::before {
+        background-image: url("../img/login-hover.png");
+    }
+
+    .nav__link--login:active::before {
+        background-image: url("../img/login.png");
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        height: 720px;
+        background: url("../img/bg-desktop.jpg") no-repeat center;
+    }
+
+    .logo {
+        top: 129px;
+    }
+
+    .nav__list {
+        width: 960px;
+    }
+
+    .nav__link {
+        margin-right: 0;
+        padding: 22px 31.5px;
+    }
+
+    .nav__link:active {
+        opacity: 1;
+    }
+
+    .nav__link:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .nav__link:active .nav__link-text {
+        opacity: 0.3;
+        color: #000;
+    }
+
+    .nav__link--active:active .nav__link-text {
+        opacity: 1;
+        color: #fff;
+    }
+
+    .nav__link--login {
+        position: relative;
+        margin-left: 77px;
+        padding-left: 61px;
+        font-size: inherit;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        left: 5px;
+    }
+
+    .nav__link--login::before {
+        top: 28px;
+        left: 27px;
+    }
+
+    .nav__link--login:hover {
+        color: #000;
+    }
+
+    .nav__link--login:hover::before {
+        background-image: url("../img/login-hover-desktop.png");
+    }
+
+    .nav__link--active:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .nav__link--active:active {
+        opacity: 1;
+        color: #fff;
+    }
 }
 
 .stats {
@@ -7966,11 +7970,5 @@ input[type="checkbox"]:checked + .signin__remember::before {
 
     .signin__submit {
         top: -30px;
-    }
-}
-
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
     }
 }

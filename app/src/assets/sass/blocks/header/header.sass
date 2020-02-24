@@ -1,3 +1,30 @@
+$hamburger-layer-height: 2px
+$hamburger-layer-color: #fff
+$hamburger-layer-border-radius: 0
+$hamburger-layer-width: 40px
+$hamburger-layer-spacing: 7px
+$hamburger-padding-y: 11.6px
+
+@import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss'
+
+.hamburger
+  +reset-mobile-active
+  position: absolute
+  outline: none
+  right: 0
+  top: 0
+  background-color: $accent-dark
+
+.hamburger-box
+  top: 3px
+  left: 3px
+
+.hamburger-inner, 
+.hamburger-inner::after,.hamburger-inner::before
+  width: 36px
+  
+
+
 .header
   position: relative
   min-width: 242px
@@ -36,10 +63,6 @@
   &:active
     background-color: $accent-dark
  
-
-.nav__link:active .nav__link-text
-  // opacity: 0.3 
-
 .nav__link--active
   display: block
   padding-left: 0
