@@ -25,6 +25,8 @@ window.addEventListener("load", function() {
     if (result.browser.name === 'Internet Explorer') {
         $('.social__icon').addClass('ie');
         $('.news__date').addClass('ie');
+        $('.copyright').addClass('ie');
+        $('.copyright__text').addClass('ie');
     };
 
     if (result.browser.name === 'Microsoft Edge') {

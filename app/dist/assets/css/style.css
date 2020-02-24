@@ -6775,6 +6775,15 @@ body {
     .social__icon--vk > svg {
         width: 18px !important;
     }
+
+    .copyright.ie {
+        -webkit-transform: translate(-24px);
+        transform: translate(-24px);
+    }
+
+    .copyright__text.ie {
+        padding-right: 13px;
+    }
 }
 
 .price {
@@ -7455,6 +7464,10 @@ input[type="checkbox"]:checked + .form__extra-item::before {
 
     .form__radio-button {
         width: 82px;
+    }
+
+    .form__extra {
+        width: 960px;
     }
 
     .form__extra-title {
