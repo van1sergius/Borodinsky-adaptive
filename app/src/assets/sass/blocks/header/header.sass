@@ -1,3 +1,14 @@
+.header
+  position: relative
+  min-width: 242px
+  background-color: $grey
+
+.logo
+  display: block
+  padding-top: 28px
+  padding-left: 6px
+  text-align: center
+
 .nav
   margin-top: 19px
 
@@ -55,3 +66,9 @@
   padding-left: 48px
   &::before
     +icon(16px, 16px, '../img/login.png', 19px, 16px)
+
+@media ( min-width: $tablet )
+  @import 'header--tablet'
+  
+@media ( min-width: $desktop )
+  @import 'header--desktop'
