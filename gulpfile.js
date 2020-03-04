@@ -109,7 +109,7 @@ function js() {
 
 function images() {
     return src(path.src.images)
-        // .pipe(imagemin())
+        .pipe(imagemin())
         .pipe(dest(path.build.images));
 }
 
