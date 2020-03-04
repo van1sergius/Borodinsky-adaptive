@@ -2,8 +2,8 @@
 //= ../../../../node_modules/bowser/bundled.js
 //= ../../../../node_modules/jquery/dist/jquery.js
 //= ../../../../node_modules/enquire.js/dist/enquire.js
-//= fragments/slider.js
-//= fragments/hamburger.js
+//= components/slider.js
+//= components/hamburger.js
 
 window.addEventListener("load", function() {
     // PARSE USER AGENT
