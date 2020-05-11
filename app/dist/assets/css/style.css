@@ -6047,8 +6047,6 @@ body {
 }
 
 .reviews::after {
-    top: 99% !important;
-    background-size: 115% 40px !important;
     position: absolute;
     display: block;
     content: "";
@@ -6309,8 +6307,6 @@ body {
 }
 
 .photo::after {
-    top: 99% !important;
-    background-size: 115% 40px !important;
     position: absolute;
     display: block;
     content: "";
@@ -7203,8 +7199,6 @@ body {
 }
 
 .form::after {
-    top: 99% !important;
-    background-size: 115% 40px !important;
     position: absolute;
     display: block;
     content: "";

@@ -35,17 +35,14 @@ window.addEventListener("load", function() {
 
   });
 
-
-$(document).ready(function() {
-	var loc = window.location.pathname;
-    if (loc !== '/') {
-        $('.nav__item').find('a').each(function() {
-            $(this).toggleClass('nav__link--active', $(this).attr('href') ==    loc);
-         });
-    
-    console.log(loc);
+var curLoc = location.href;
+var menuItem = document.querySelectorAll('a');
+var menuLength = menuItem.length;
+for (var i = 0; i < menuLength; i++) {
+    if(menuItem[i].href === curLoc){
+        menuItem[i].className = "nav__link nav__link--active";
+    }
 }
-
 
 var popUp = 'zoomIn'; 
 
@@ -107,7 +104,7 @@ $('.signin__close').on('click', function(event) {
 
 })
 
-})
+
 
 
 
